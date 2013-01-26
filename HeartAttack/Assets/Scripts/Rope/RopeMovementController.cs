@@ -1,10 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class RopeMovementController : MonoBehaviour {
 
 	bool isFollowingMouse = false;
 	public bool isConnected = false;
+
+	Vector2 grabPosition;
 
 	int TIP_LAYER = 8;
 	int layerMask = 1 << 8;
@@ -35,8 +38,8 @@ public class RopeMovementController : MonoBehaviour {
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		    if (Physics.Raycast(ray.origin,ray.direction,out hit,Mathf.Infinity,layerMask)){
 		        if (hit.transform == this.transform){
+		        	grabPosition = Input.mousePosition;
 			        isFollowingMouse = true;
-			        Debug.Log("GRABBED ROPE");
 			        rigidbody.isKinematic = true;
 			        isConnected = false;
 			    }
@@ -55,6 +58,21 @@ public class RopeMovementController : MonoBehaviour {
 		pos.z = this.transform.position.z;
 		Vector3 mouseWorldPt = Camera.main.ScreenToWorldPoint(pos);
 		rigidbody.MovePosition(mouseWorldPt);
+
+		checkForAttachment();
+	}
+
+	void checkForAttachment() {
+		if (Vector2.Distance(grabPosition, Input.mousePosition) > 75f){
+			List<NodeConnection> connections = GameManager.getInstance().nodeConnections;
+			foreach (NodeConnection nc in connections) {
+				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
+				if (dist < 1f) {
+					nc.connectWithRope(this);
+					break;
+				}
+			}
+		}		
 	}
 
 	public void stopDragging() {

@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 	public ViewManager viewManager;
-	
+	public List<NodeConnection> nodeConnections;
+
 	float currentHeartRate; // beats per minute
 	float nextCardTime;
 	
@@ -18,6 +19,14 @@ public class GameManager : MonoBehaviour {
 	const float SUPER_EASY_CHANCE = 0.05f; // remove 2 colors from next card
 	// note that total likelihood of getting at least one color removed is the sum of the above, in this case 15%
 	
+	private static GameManager instance;
+	public static GameManager getInstance() {
+	    if (instance == null) {
+			instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+	    }
+	    return instance;
+	}
+
 	// Use this for initialization
 	void Start () {
 		currentHeartRate = BASE_HEART_RATE;
