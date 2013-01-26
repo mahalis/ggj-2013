@@ -9,7 +9,7 @@ public class HeartBeatController : MonoBehaviour {
 	float beatPeriod = 1f;
 
 	float smallerContractionScale = 0.98f;
-	float biggerContractionScale = 0.95f;
+	float biggerContractionScale = 0.92f;
 
 	float smallerContractionTarget = 0f;
 	float largerContractionTarget = 0f;
