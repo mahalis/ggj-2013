@@ -18,6 +18,12 @@ MonoBehaviour:
   - assetGUID: 68cc4da10d501f9439d1507a1a2c46c1
     dataGUID: 
     managed: 0
+  - assetGUID: 91b5f81c732404b39a2d5968e6679bb3
+    dataGUID: 
+    managed: 0
+  - assetGUID: 6d3af003444cb46b491e73907fe3f0a5
+    dataGUID: 
+    managed: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -34,10 +40,13 @@ MonoBehaviour:
     spriteCollectionDataGUID: 63a2373a08b354161991bea32c8192ac
     spriteNames:
     - action-card-placeholder
+    - ColourCapsule
     spriteTextureGUIDs:
     - 29673dcabb21f442b815f703b29832c2
+    - 8a1c380035cde4f2288cded346ed8b75
     spriteTextureTimeStamps:
     - 1359146231
+    - 1359212737
     managedSpriteCollection: 0
     version: 3
   - name: Generic
@@ -49,5 +58,288 @@ MonoBehaviour:
     - 8f4494a81dd3345f28c6202e75e05249
     spriteTextureTimeStamps:
     - 1359147285
+    managedSpriteCollection: 0
+    version: 3
+  - name: Frankenstein
+    spriteCollectionGUID: ee1947abf15ae41ccaa2da2a134410c1
+    spriteCollectionDataGUID: a19221096962347b2aee49462e694d1e
+    spriteNames:
+    - FrankensteinLove0001
+    - FrankensteinLove0002
+    - FrankensteinLove0003
+    - FrankensteinLove0004
+    - FrankensteinLove0005
+    - FrankensteinLove0006
+    - FrankensteinLove0007
+    - FrankensteinLove0008
+    - FrankensteinLove0009
+    - FrankensteinLove0010
+    - FrankensteinLove0011
+    - FrankensteinLove0012
+    - FrankensteinLove0013
+    - FrankensteinLove0014
+    - FrankensteinLove0015
+    - FrankensteinLove0016
+    - FrankensteinLove0017
+    - FrankensteinLove0018
+    - FrankensteinLove0019
+    - FrankensteinLove0020
+    - FrankensteinLove0021
+    - FrankensteinLove0022
+    - FrankensteinLove0023
+    - FrankensteinLove0024
+    - FrankensteinLove0025
+    - FrankensteinLove0026
+    - FrankensteinLove0027
+    - FrankensteinLove0028
+    - FrankensteinLove0029
+    - FrankensteinLove0030
+    - FrankensteinLove0031
+    - FrankensteinLove0032
+    - FrankensteinLove0033
+    - FrankensteinLove0034
+    - FrankensteinScared0001
+    - FrankensteinScared0002
+    - FrankensteinScared0003
+    - FrankensteinScared0004
+    - FrankensteinScared0005
+    - FrankensteinScared0006
+    - FrankensteinScared0007
+    - FrankensteinScared0008
+    - FrankensteinScared0009
+    - FrankensteinScared0010
+    - FrankensteinScared0011
+    - FrankensteinScared0012
+    - FrankensteinScared0013
+    - FrankensteinScared0014
+    - FrankensteinScared0015
+    - FrankensteinScared0016
+    - FrankensteinScared0017
+    - FrankensteinScared0018
+    - FrankensteinScared0019
+    - FrankensteinScared0020
+    - FrankensteinScared0021
+    - FrankensteinScared0022
+    - FrankensteinScared0023
+    - FrankensteinScared0024
+    - FrankensteinScared0025
+    - FrankensteinScared0026
+    spriteTextureGUIDs:
+    - b00676ea37f3b4c7eaa85c82d3a9a3bb
+    - c6c7dcd03b7714185958706f4c147eb5
+    - 3cf48305a5c2d491b80ed9be0faeb1d5
+    - 714a787157adf436581c793ea4c7f14c
+    - 60b4c79a164d04054a3c15796ff68909
+    - 152b24f01ce684a3f90e25b271fd307e
+    - e760becb35341431d9b2887396744dad
+    - a91fe7340e51140798196b637929e7f7
+    - 0a257f54d2e0b440dbc2fc3e83b82b11
+    - 995076421887446f48ca2ab000d7a413
+    - f7f5ba1901f0a4d8281add91d1eca0fe
+    - 3b66088b4e5454eeab66d16a4559540b
+    - a32baabfcbb3d43beba0ef4f64db0a8d
+    - 79dace356d96d4e7297e183424e71501
+    - 4e0700b3ee7014630b92d3c92859c516
+    - 5a5b72a5ade064d8ca2d8e86da5047bf
+    - c7884bc4e56d44ce194004d1463d4801
+    - 9230aa41b205547dba6b0b9936912c7e
+    - a829b95679ace4eb1b3f573d49adeb47
+    - ba9f89911b3984f5da2e66d00b103421
+    - 25427c0dca21146c1a3aca8c34b16b7d
+    - 06c58c9519a3441ca8561b3acdb3ea74
+    - 90658f9e874584b54b7d0f365cdf74b7
+    - a8e4d505fd86b41289d6b64261a1e9b0
+    - 10f6e271cfd5c4c2ba598c848758ecd2
+    - fa27831ec55104c8284180478ef03c96
+    - 295ebf4c61c314577824a8efab66207f
+    - 4a87e5d5d93d542c9a2703a55872a229
+    - b2974e7ae325046a69e6cbfb9b80f30d
+    - 667fd3695c5e549c38257757c54b4cc5
+    - 37746e285b486497d845deb98dd70dbe
+    - e2cf207555a864734b9a64706fe7e899
+    - 3bd0b4158aeaa493f9c2ecb65f9db0d2
+    - f22594bad9b834e2493af63c11d78fb9
+    - 95bd9beeb5e184a1db01288ad9d9c40b
+    - c3243880be1794592ada80c2f5228a78
+    - 8c38e7012c2694cf095352f56a532eb9
+    - ae23cebe37d8041528b64440b4e5f1cc
+    - 0a81f92375f2c4b4c813f9f4e29efcfa
+    - 564c7d809bfe94088bbc275f9079813c
+    - 34a65a58595b1439ebc58fb7cfc77235
+    - 62b70ab9c5954466588502fc98b274a8
+    - 64ae5de353f25407fb847b68749185cb
+    - 989a2f8605d3e4238b40e8aad73341d5
+    - 67b411d2e207749c897d9ac17c507416
+    - 14995af098d914dc2b74604319b71283
+    - 44ac615c83e9e4b2f9b273b6821788ad
+    - 72b7eb5c83fc6487f80fb4f302806534
+    - 110931af31df34d4f944366c05e016a2
+    - 2f8cdb7120a444e47bb9aba732a8b8a8
+    - f0723fda4dc0c4bd385eff718182c653
+    - e7925fa868e5c4b57ac8735b0483763f
+    - 4de3a0f5aba284e72955bf93f90851c7
+    - b4c58a1c6321742e3812999fc7e727bf
+    - 7a0c2c11c52484b82ab232bd5bfe4b1b
+    - 8993da7bcc38844298619e6c6b5947c2
+    - 3f4cfb008f8564870850780330f84f5b
+    - 5ecfd21b183154f05b533e3610583ec3
+    - 9259b7695e48449cdac3cd07e4ad3dbc
+    - 8cad1cd3c89d74d7ba66b6bbab9276c4
+    spriteTextureTimeStamps:
+    - 1359238158
+    - 1359238158
+    - 1359238158
+    - 1359238158
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238160
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238162
+    - 1359238164
+    - 1359238164
+    - 1359238164
+    - 1359238164
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238116
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238118
+    - 1359238120
+    - 1359238120
+    - 1359238120
+    managedSpriteCollection: 0
+    version: 3
+  - name: Vampire
+    spriteCollectionGUID: efb9d7750969b44a2a0ab0211b931f51
+    spriteCollectionDataGUID: b05610756abed45b7a7beba4fdf4a7c0
+    spriteNames:
+    - Vampire0001
+    - Vampire0002
+    - Vampire0003
+    - Vampire0004
+    - Vampire0005
+    - Vampire0006
+    - Vampire0007
+    - Vampire0008
+    - Vampire0009
+    - Vampire0010
+    - Vampire0011
+    - Vampire0012
+    - Vampire0013
+    - Vampire0014
+    - Vampire0015
+    - Vampire0016
+    - Vampire0017
+    - Vampire0018
+    - Vampire0019
+    - Vampire0020
+    - Vampire0021
+    - Vampire0022
+    - Vampire0023
+    - Vampire0024
+    - Vampire0025
+    - Vampire0026
+    - Vampire0027
+    - Vampire0028
+    - Vampire0029
+    spriteTextureGUIDs:
+    - 84396c31c0de843bd92e1b25ffc43b14
+    - b43fd449cb3c149ed879c7c05421c1c2
+    - b1c2283a5f7a74086a65967818d6b187
+    - 8d70463cbfcc2403a8887f0aef4dffd8
+    - ae2bbc585ce154502bacd49b24b40e62
+    - 3f8155a0f0bbf4594988ec05672245e3
+    - 69231aec7d97e48019c7b1a37b509679
+    - 29af4eadef839490c8fcb9efd43a290b
+    - 4ac3f9f6015314358ba35da184a5492d
+    - 9e3e5d7d89bbb4fb58d4d00e38b3ba56
+    - 274fe153fc7b549239c3abf9a1c6292a
+    - 79ef9783a8df14fec9c18c7e59b7aa33
+    - a8847d200468d43899000fbe58347713
+    - a36d1c39ba7b94488b007eacdcad0739
+    - 0e1fc1eed6c994c28b72203998810276
+    - 3ae77d114c92243b693c200224a5b4be
+    - fb55a978fc64b4cdd9e4ee49b3de5f80
+    - 5146436215e6c4b7dac03e54f69818cc
+    - 43726aec1397041b5acd67b558922e9e
+    - b06cdcaa854c540e98cdfcd6392e8739
+    - 3fdc49ebc959f4f52bc4e1e3d69177c6
+    - 47149cc45902a4dfaad5d055a55b071a
+    - 8fe59511359a04d0cb7052ac3f898f34
+    - 25d6fcefb92624c90be6e409ae9c7480
+    - 03d0e10317c6c4ae8b981d860f49af13
+    - 59dc2e8565a7a4625a45cd81ece9fbf9
+    - 55fe1dd1fa61c45a4b8a3682338bd84f
+    - 972272fa725814d248d75294ebab9b69
+    - f7b0c47387d744b1988917dc1b927add
+    spriteTextureTimeStamps:
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240066
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240068
+    - 1359240070
+    - 1359240070
+    - 1359240070
+    - 1359240070
+    - 1359240070
+    - 1359240070
+    - 1359240070
     managedSpriteCollection: 0
     version: 3

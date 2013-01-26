@@ -74,5 +74,15 @@ public class GameManager : MonoBehaviour {
 		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.YELLOW});
 	}
 
+	public void nodeWasConnected () {
+		List<PortColor> connectedColors = new List<PortColor>();
+		foreach(NodeConnection nc in nodeConnections) {
+			if (nc.isConnected){
+				connectedColors.Add(nc.portColor);
+			}
+		}
+		ActionCardManager.getInstance().checkForActionCompletion(connectedColors);
+	}
+
 
 }

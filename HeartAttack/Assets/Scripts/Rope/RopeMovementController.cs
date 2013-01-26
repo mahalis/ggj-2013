@@ -69,7 +69,9 @@ public class RopeMovementController : MonoBehaviour {
 			foreach (NodeConnection nc in connections) {
 				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
 				if (dist < 1f) {
+					isConnected = true;
 					nc.connectWithRope(this);
+					GameManager.getInstance().nodeWasConnected();
 					break;
 				}
 			}

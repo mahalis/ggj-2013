@@ -3,9 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ActionCard : MonoBehaviour {
-	float BAR_WIDTH = 20f;
-	float BAR_HEIGHT= 20f;
-	float CARD_HEIGHT= 256f;
+	float BAR_WIDTH = 1.7f;
 
 
 	public List<PortColor> portColors;
@@ -19,21 +17,15 @@ public class ActionCard : MonoBehaviour {
 
 	void buildPortColorBar ()  {
 		if (portColorPrefab) {
-			GameObject portColorsParent = new GameObject();
-			portColorsParent.name = "PortColors";
-			portColorsParent.transform.parent = this.transform;
-			portColorsParent.transform.localPosition = Vector3.zero;
-
-			float xOffset = (portColors.Count * BAR_WIDTH)/2f;	
+			float xOffset = ((portColors.Count-1) * BAR_WIDTH)/2f;	
 			for (int i = 0; i < portColors.Count; i ++) {
 				PortColor pc = portColors[i];
 				GameObject colorBar = Instantiate(portColorPrefab,Vector3.zero,Quaternion.identity) as GameObject;
-				colorBar.transform.parent = portColorsParent.transform;
+				colorBar.transform.parent = this.transform;
 				tk2dSprite barSprite = colorBar.GetComponent<tk2dSprite>();
-				// TODO : Get rgb forom config
 				barSprite.color = PortColorRGB.getRGBForPortColor(pc);
-				colorBar.transform.localPosition = new Vector3((BAR_WIDTH*2 * i)-xOffset, -CARD_HEIGHT/2f + BAR_HEIGHT, -1f);
-				colorBar.transform.localScale = new Vector3(BAR_WIDTH, BAR_HEIGHT, 1);
+				colorBar.transform.localPosition = new Vector3((BAR_WIDTH*i)-xOffset, -1.25f, 0);
+				colorBar.transform.localScale = Vector3.one;
 			}
 		} else {
 			Debug.Log("Port color prefab missing!!");

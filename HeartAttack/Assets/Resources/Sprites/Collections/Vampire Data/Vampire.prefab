@@ -1,0 +1,1146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Vampire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Vampire0001
+    boundsData:
+    - {x: -.026562497, y: -.026562497, z: 0}
+    - {x: .640625, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.346875012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.346875012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .219727546, y: .00195410149}
+    - {x: .419920892, y: .00195410149}
+    - {x: .219727546, y: .110350586}
+    - {x: .419920892, y: .110350586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 84396c31c0de843bd92e1b25ffc43b14
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0002
+    boundsData:
+    - {x: -.026562497, y: -.026562497, z: 0}
+    - {x: .640625, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.346875012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.346875012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .423829108, y: .00195410149}
+    - {x: .624022484, y: .00195410149}
+    - {x: .423829108, y: .110350586}
+    - {x: .624022484, y: .110350586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: b43fd449cb3c149ed879c7c05421c1c2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0003
+    boundsData:
+    - {x: -.026562497, y: -.026562497, z: 0}
+    - {x: .640625, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.346875012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.346875012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .627930641, y: .00195410149}
+    - {x: .828124046, y: .00195410149}
+    - {x: .627930641, y: .110350586}
+    - {x: .828124046, y: .110350586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: b1c2283a5f7a74086a65967818d6b187
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0004
+    boundsData:
+    - {x: -.026562497, y: -.026562497, z: 0}
+    - {x: .640625, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.346875012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.346875012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .832032204, y: .00195410149}
+    - {x: .832032204, y: .202147454}
+    - {x: .940428734, y: .00195410149}
+    - {x: .940428734, y: .202147454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8d70463cbfcc2403a8887f0aef4dffd8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0005
+    boundsData:
+    - {x: -.026562497, y: -.026562497, z: 0}
+    - {x: .640625, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.346875012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.346875012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .114258789}
+    - {x: .202147454, y: .114258789}
+    - {x: .00195410149, y: .222655267}
+    - {x: .202147454, y: .222655267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: ae2bbc585ce154502bacd49b24b40e62
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0006
+    boundsData:
+    - {x: -.0249999911, y: -.026562497, z: 0}
+    - {x: .637500048, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.34375, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.34375, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .206055671, y: .114258789}
+    - {x: .405272454, y: .114258789}
+    - {x: .206055671, y: .222655267}
+    - {x: .405272454, y: .222655267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3f8155a0f0bbf4594988ec05672245e3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0007
+    boundsData:
+    - {x: -.0249999911, y: -.026562497, z: 0}
+    - {x: .637500048, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.34375, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.34375, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .409180671, y: .114258789}
+    - {x: .608397484, y: .114258789}
+    - {x: .409180671, y: .222655267}
+    - {x: .608397484, y: .222655267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 69231aec7d97e48019c7b1a37b509679
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0008
+    boundsData:
+    - {x: -.0234375, y: -.026562497, z: 0}
+    - {x: .634375036, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.340625018, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.340625018, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .612305641, y: .114258789}
+    - {x: .810545921, y: .114258789}
+    - {x: .612305641, y: .222655267}
+    - {x: .810545921, y: .222655267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 29af4eadef839490c8fcb9efd43a290b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0009
+    boundsData:
+    - {x: -.021874994, y: -.026562497, z: 0}
+    - {x: .631250024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.337500006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.337500006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .814454079, y: .206055671}
+    - {x: .814454079, y: .403319329}
+    - {x: .922850609, y: .206055671}
+    - {x: .922850609, y: .403319329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4ac3f9f6015314358ba35da184a5492d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0010
+    boundsData:
+    - {x: -.0203124881, y: -.026562497, z: 0}
+    - {x: .628125012, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.334374994, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.334374994, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .407227546}
+    - {x: .00195410149, y: .603514671}
+    - {x: .110350586, y: .407227546}
+    - {x: .110350586, y: .603514671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9e3e5d7d89bbb4fb58d4d00e38b3ba56
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0011
+    boundsData:
+    - {x: -.018749997, y: -.026562497, z: 0}
+    - {x: .625, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.331250012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.331250012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .226563483}
+    - {x: .197264642, y: .226563483}
+    - {x: .00195410149, y: .334959954}
+    - {x: .197264642, y: .334959954}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 274fe153fc7b549239c3abf9a1c6292a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0012
+    boundsData:
+    - {x: -.0171874911, y: -.026562497, z: 0}
+    - {x: .621875048, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.328125, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.328125, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .607422829}
+    - {x: .00195410149, y: .801756859}
+    - {x: .110350586, y: .607422829}
+    - {x: .110350586, y: .801756859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 79ef9783a8df14fec9c18c7e59b7aa33
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0013
+    boundsData:
+    - {x: -.015625, y: -.026562497, z: 0}
+    - {x: .618750036, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.325000018, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.325000018, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .805665016}
+    - {x: .195311517, y: .805665016}
+    - {x: .00195410149, y: .914061546}
+    - {x: .195311517, y: .914061546}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: a8847d200468d43899000fbe58347713
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0014
+    boundsData:
+    - {x: -.0124999881, y: -.026562497, z: 0}
+    - {x: .612500012, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.318749994, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.318749994, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .114258789, y: .338868171}
+    - {x: .114258789, y: .530272484}
+    - {x: .222655267, y: .338868171}
+    - {x: .222655267, y: .530272484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: a36d1c39ba7b94488b007eacdcad0739
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0015
+    boundsData:
+    - {x: -.010937497, y: -.026562497, z: 0}
+    - {x: .609375, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.315625012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.315625012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .114258789, y: .534180641}
+    - {x: .114258789, y: .724608421}
+    - {x: .222655267, y: .534180641}
+    - {x: .222655267, y: .724608421}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0e1fc1eed6c994c28b72203998810276
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0016
+    boundsData:
+    - {x: -.0078125, y: -.026562497, z: 0}
+    - {x: .603125036, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.309375018, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.309375018, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .199219733, y: .728516579}
+    - {x: .199219733, y: .916991234}
+    - {x: .307616204, y: .728516579}
+    - {x: .307616204, y: .916991234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3ae77d114c92243b693c200224a5b4be
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0017
+    boundsData:
+    - {x: -.00624999404, y: -.026562497, z: 0}
+    - {x: .600000024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.306250006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.306250006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .226563483, y: .338868171}
+    - {x: .226563483, y: .526366234}
+    - {x: .334959954, y: .338868171}
+    - {x: .334959954, y: .526366234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: fb55a978fc64b4cdd9e4ee49b3de5f80
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0018
+    boundsData:
+    - {x: -.00312499702, y: -.026562497, z: 0}
+    - {x: .59375, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.300000012, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.300000012, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .226563483, y: .530274391}
+    - {x: .226563483, y: .715819359}
+    - {x: .334959954, y: .530274391}
+    - {x: .334959954, y: .715819359}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5146436215e6c4b7dac03e54f69818cc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0019
+    boundsData:
+    - {x: 0, y: -.026562497, z: 0}
+    - {x: .587500036, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.293750018, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.293750018, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .311524421, y: .719727516}
+    - {x: .311524421, y: .903319359}
+    - {x: .419920892, y: .719727516}
+    - {x: .419920892, y: .903319359}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 43726aec1397041b5acd67b558922e9e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0020
+    boundsData:
+    - {x: .00312501192, y: -.026562497, z: 0}
+    - {x: .581250012, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.287499994, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.287499994, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .338868171, y: .338868171}
+    - {x: .338868171, y: .520506859}
+    - {x: .447264642, y: .338868171}
+    - {x: .447264642, y: .520506859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: b06cdcaa854c540e98cdfcd6392e8739
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0021
+    boundsData:
+    - {x: .00625000894, y: -.026562497, z: 0}
+    - {x: .575000048, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.28125, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.28125, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .396485358, y: .226563483}
+    - {x: .576170921, y: .226563483}
+    - {x: .396485358, y: .334959954}
+    - {x: .576170921, y: .334959954}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3fdc49ebc959f4f52bc4e1e3d69177c6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0022
+    boundsData:
+    - {x: .00937500596, y: -.026562497, z: 0}
+    - {x: .568750024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.275000006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.275000006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .338868171, y: .524415016}
+    - {x: .338868171, y: .702147484}
+    - {x: .447264642, y: .524415016}
+    - {x: .447264642, y: .702147484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 47149cc45902a4dfaad5d055a55b071a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0023
+    boundsData:
+    - {x: .017187506, y: -.026562497, z: 0}
+    - {x: .553125024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.259375006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.259375006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .632813454, y: .338868171}
+    - {x: .805663109, y: .338868171}
+    - {x: .632813454, y: .447264642}
+    - {x: .805663109, y: .447264642}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8fe59511359a04d0cb7052ac3f898f34
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0024
+    boundsData:
+    - {x: .00937500596, y: -.026562497, z: 0}
+    - {x: .568750024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.275000006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.275000006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .423829108, y: .706055641}
+    - {x: .423829108, y: .883788109}
+    - {x: .532225609, y: .706055641}
+    - {x: .532225609, y: .883788109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 25d6fcefb92624c90be6e409ae9c7480
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0025
+    boundsData:
+    - {x: .00937500596, y: -.026562497, z: 0}
+    - {x: .568750024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.275000006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.275000006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .423829108, y: .887696266}
+    - {x: .601561546, y: .887696266}
+    - {x: .423829108, y: .996092796}
+    - {x: .601561546, y: .996092796}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 03d0e10317c6c4ae8b981d860f49af13
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0026
+    boundsData:
+    - {x: .00937500596, y: -.026562497, z: 0}
+    - {x: .568750024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.275000006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.275000006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .451172858, y: .338868171}
+    - {x: .628905296, y: .338868171}
+    - {x: .451172858, y: .447264642}
+    - {x: .628905296, y: .447264642}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 59dc2e8565a7a4625a45cd81ece9fbf9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0027
+    boundsData:
+    - {x: .00937500596, y: -.026562497, z: 0}
+    - {x: .568750024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.275000006, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.275000006, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .580079079, y: .226563483}
+    - {x: .757811546, y: .226563483}
+    - {x: .580079079, y: .334959954}
+    - {x: .757811546, y: .334959954}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 55fe1dd1fa61c45a4b8a3682338bd84f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0028
+    boundsData:
+    - {x: -.0124999881, y: -.026562497, z: 0}
+    - {x: .612500012, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.318749994, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.318749994, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .201172858, y: .226563483}
+    - {x: .392577142, y: .226563483}
+    - {x: .201172858, y: .334959954}
+    - {x: .392577142, y: .334959954}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: 972272fa725814d248d75294ebab9b69
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Vampire0029
+    boundsData:
+    - {x: -.0484374911, y: -.026562497, z: 0}
+    - {x: .684375048, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.390625, y: -.200000003, z: 0}
+    - {x: .293750018, y: -.200000003, z: 0}
+    - {x: -.390625, y: .146875009, z: 0}
+    - {x: .293750018, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .00195410149}
+    - {x: .215819329, y: .00195410149}
+    - {x: .00195410149, y: .110350586}
+    - {x: .215819329, y: .110350586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+    materialId: 0
+    sourceTextureGUID: f7b0c47387d744b1988917dc1b927add
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 98774216d21d241ed9da6e6440cf2680, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 14ca4bee4520f468ca233a3fe4caa8bc, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: efb9d7750969b44a2a0ab0211b931f51
+  spriteCollectionName: Vampire
+  assetName: 
+  invOrthoSize: 1
+  halfTargetHeight: 320
+  buildKey: 1070918838
+  dataGuid: b05610756abed45b7a7beba4fdf4a7c0
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

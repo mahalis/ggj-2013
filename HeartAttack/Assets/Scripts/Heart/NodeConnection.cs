@@ -9,7 +9,7 @@ public class NodeConnection : MonoBehaviour {
 		rc.stopDragging();
     	rc.rigidbody.MovePosition(this.transform.position);
     	rc.isConnected = true;
-    	this.isConnected = false;
+    	this.isConnected = true;
 	}
 	public void disconnectRope() {
 		this.isConnected = false;
