@@ -43,13 +43,14 @@ public class RopeMovementController : MonoBehaviour {
 	}
 
 	void followMouse () {
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		//Vector3 mousePos = 
-		Vector3 newPos = this.transform.localPosition;
-		newPos.x = ray.origin.x;
-		newPos.y = ray.origin.y;
-		Debug.Log("current : " + this.transform.localPosition);
-		Debug.Log("newPos : " + newPos);
+		Vector3 mouseWorldPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Debug.Log("mouseWorldPt " + mouseWorldPt);
+		//Vector3 newPos = this.transform.localPosition;
+		//Debug.Log("current : " + this.transform.localPosition);
+		//Debug.Log("newPos : " + newPos);
 		//rigidbody.MovePosition(newPos);
+
+		//Vector3 localPt = transform.parent.InverseTransformPoint(mouseWorldPt);
+		//Debug.Log("localPt : " + localPt);
 	}
 }
