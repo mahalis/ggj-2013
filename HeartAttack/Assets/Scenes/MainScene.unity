@@ -2222,7 +2222,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537504216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512.029297, y: 575.984375, z: -.00927734375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2237,8 +2237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cf175273d684826ae5dff0c245c61e, type: 3}
   m_Name: 
   viewManager: {fileID: 302818351}
-  nodeConnections:
-  - {fileID: 903655258}
+  nodeConnections: []
 --- !u!1 &1644899789
 GameObject:
   m_ObjectHideFlags: 0
