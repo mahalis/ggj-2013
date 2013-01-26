@@ -52,13 +52,11 @@ public class ActionCardManager : MonoBehaviour {
 		// randomly pick from prefabs
 		int randomNum = Random.Range(0,availableActionCards.Count);
 		GameObject selectedActionCard = availableActionCards[randomNum];
-		Debug.Log(selectedActionCard);
 		GameObject actionCardGO = Instantiate(selectedActionCard,Vector3.zero,Quaternion.identity) as GameObject;
 		actionCardGO.transform.parent = this.transform;
 		ActionCard newActionCard = actionCardGO.GetComponent<ActionCard>();
 		
-		// TODO : link numColors to colors generated
-		newActionCard.portColors = buildPortColorListOfLength(numColors, activeActionCards.Count+1);
+		newActionCard.portColors = buildPortColorListOfLength(numColors, activeActionCards.Count);
 
 		newActionCard.transform.localPosition = new Vector3(0,GameConfig.ACTION_CARD_HEIGHT * activeActionCards.Count,0);
 
@@ -67,20 +65,47 @@ public class ActionCardManager : MonoBehaviour {
 	}
 
 	List<PortColor> buildPortColorListOfLength(int numColors,int targetIndex) {
-		List<PortColor> portColors = new List<PortColor>();
-		bool success = false;
-		for (int i = 0; i < numColors; i ++) {
-			success = false;
-			do {
-				int randomNum = Random.Range(1,GameConfig.NUMBER_OF_PORT_COLORS+1);
-				Debug.Log(randomNum);
-				PortColor pc = (PortColor)randomNum;
-				if(!portColors.Contains(pc)){
-					portColors.Add(pc);
-					success = true;
-				}			
-			} while(!success);
-		}
+		bool passedPreviousCompare = false;
+
+		List<PortColor> portColors;
+		do {
+			portColors = new List<PortColor>();
+			for (int i = 0; i < numColors; i ++) {
+				bool success = false;
+				do {
+					int randomNum = Random.Range(1,GameConfig.NUMBER_OF_PORT_COLORS);
+					PortColor pc = (PortColor)randomNum;
+					if(!portColors.Contains(pc)){
+						portColors.Add(pc);
+						success = true;
+					}			
+				} while(!success);
+			}
+
+
+			Debug.Log("target index : " + targetIndex);
+			if (targetIndex == 0) { // nothing to compaer to
+				passedPreviousCompare = true;
+			} else { // guarantee no direct color combo repeats
+				ActionCard ac = activeActionCards[targetIndex-1];
+				// first check for num diff
+				if (ac.portColors.Count != numColors) {
+					passedPreviousCompare = true;
+				} else {
+					bool isDiff = false;
+					foreach (PortColor pc in portColors){
+						if (!ac.portColors.Contains(pc)){
+							isDiff = true;
+							break;
+						}
+					}
+					if (isDiff){
+						passedPreviousCompare = true;
+					}
+				}				
+			}
+		}while(!passedPreviousCompare);
+
 		return portColors;
 	}
 
@@ -105,17 +130,19 @@ public class ActionCardManager : MonoBehaviour {
 
 
 	public void checkForActionCompletion(List<PortColor> connectedPortColors) {
-		ActionCard activeActionCard = activeActionCards[0];
-		int requiredConnections = activeActionCard.portColors.Count;
-		int correctConnections = 0;
-		foreach (PortColor pc in connectedPortColors) {
-			if (activeActionCard.portColors.Contains(pc)){
-				correctConnections ++;
+		if (activeActionCards.Count >0) {
+			ActionCard activeActionCard = activeActionCards[0];
+			int requiredConnections = activeActionCard.portColors.Count;
+			int correctConnections = 0;
+			foreach (PortColor pc in connectedPortColors) {
+				if (activeActionCard.portColors.Contains(pc)){
+					correctConnections ++;
+				}
 			}
-		}
-		if (correctConnections == requiredConnections) {
-			activeActionCardHasBeenCompleted();
-		}
+			if (correctConnections == requiredConnections) {
+				activeActionCardHasBeenCompleted();
+			}
+		}		
 	}
 
 	void activeActionCardHasBeenCompleted() {
@@ -140,7 +167,7 @@ public class ActionCardManager : MonoBehaviour {
 				completedCard.transform.localPosition.y,			
 				completedCard.transform.localPosition.z
 			);
-			transitionCompletedTime += Time.deltaTime * 3f;
+			transitionCompletedTime += Time.deltaTime * 5f;
 		}
 	}
 
