@@ -26,8 +26,10 @@ public class RopeController : MonoBehaviour {
 				position += transformedOffset;
 			}
 			GameObject newSegment = (GameObject)Instantiate(segment, position, startRotation);
+			newSegment.transform.parent = this.transform;
 			ConfigurableJoint joint = ((ConfigurableJoint)(newSegment.GetComponent<ConfigurableJoint>()));
 			joint.connectedBody = lastBody;
+			joint.configuredInWorldSpace = true;
 			lastBody = newSegment.GetComponent<Rigidbody>();
 		}
 		//lastBody.AddForce(new Vector3(500, 0, 0));
