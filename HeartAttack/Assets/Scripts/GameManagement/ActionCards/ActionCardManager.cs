@@ -56,7 +56,7 @@ public class ActionCardManager : MonoBehaviour {
 		actionCardGO.transform.parent = this.transform;
 		ActionCard newActionCard = actionCardGO.GetComponent<ActionCard>();
 		
-		newActionCard.portColors = buildPortColorListOfLength(numColors, activeActionCards.Count);
+		newActionCard.portColors = buildPortColorListOfLength(Mathf.Min(numColors, GameConfig.NUMBER_OF_PORT_COLORS), activeActionCards.Count);
 
 		newActionCard.transform.localPosition = new Vector3(0,GameConfig.ACTION_CARD_HEIGHT * activeActionCards.Count,0);
 
@@ -83,7 +83,6 @@ public class ActionCardManager : MonoBehaviour {
 			}
 
 
-			Debug.Log("target index : " + targetIndex);
 			if (targetIndex == 0) { // nothing to compaer to
 				passedPreviousCompare = true;
 			} else { // guarantee no direct color combo repeats
@@ -120,12 +119,14 @@ public class ActionCardManager : MonoBehaviour {
 		if (transitionTime > 1f){
 			isTransitioning = false;
 		}
+		float dY = targetTransitionY - startTransitionY;
+		
 		this.gameObject.transform.localPosition = new Vector3(
 			this.gameObject.transform.localPosition.x,
-			Mathf.Lerp(startTransitionY,targetTransitionY,transitionTime),
+			startTransitionY + dY * (-0.5f * Mathf.Cos(transitionTime * Mathf.PI) + 0.5f),
 			this.gameObject.transform.localPosition.z
 		);
-		transitionTime += Time.deltaTime * 2f;
+		transitionTime += Time.deltaTime / 0.5f;
 	}
 
 
@@ -148,7 +149,7 @@ public class ActionCardManager : MonoBehaviour {
 	void activeActionCardHasBeenCompleted() {
 		ActionCard completedCard = activeActionCards[0];
 		startTransitionX = completedCard.transform.localPosition.x;
-		targetTransitionX = startTransitionX + GameConfig.ACTION_CARD_HEIGHT;
+		targetTransitionX = startTransitionX + 2 * GameConfig.ACTION_CARD_HEIGHT;
 
 		transitionCompletedTime = 0f;
 		isTransitioningCompleted = true;
@@ -162,12 +163,16 @@ public class ActionCardManager : MonoBehaviour {
 			StartCoroutine(reorderActiveCards());
 		} else {
 			ActionCard completedCard = activeActionCards[0];
+			float dX = targetTransitionX - startTransitionX;
 			completedCard.transform.localPosition = new Vector3(
-				Mathf.Lerp(startTransitionX,targetTransitionX,transitionCompletedTime),
+				startTransitionX + dX * (-0.5f * Mathf.Cos(transitionCompletedTime * Mathf.PI * 0.5f) + 0.5f), // only go to half pi because we don’t need deceleration at the end
 				completedCard.transform.localPosition.y,			
 				completedCard.transform.localPosition.z
 			);
-			transitionCompletedTime += Time.deltaTime * 5f;
+			Color color = completedCard.cardSprite.color;
+			color.a = 1.0f - Mathf.Pow (transitionCompletedTime, 2);
+			completedCard.cardSprite.color = color;
+			transitionCompletedTime += Time.deltaTime / 0.25f;
 		}
 	}
 

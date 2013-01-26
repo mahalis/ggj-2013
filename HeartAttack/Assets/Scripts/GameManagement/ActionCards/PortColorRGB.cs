@@ -18,8 +18,14 @@ public static class PortColorRGB {
 			case PortColor.YELLOW : 
 				returnColor = new Color(1f,1f,0f,1f);
 			break;
+			case PortColor.CYAN :
+				returnColor = new Color(0f,1f,1f,1f);
+			break;
+			case PortColor.MAGENTA :
+				returnColor = new Color(1f,0f,1f,1f);
+				break;
 			default :
-				returnColor = new Color(1f,1f,1f,1f); 
+				returnColor = new Color(0f,0f,0f,1f); 
 			break;
 		}
 		return returnColor;

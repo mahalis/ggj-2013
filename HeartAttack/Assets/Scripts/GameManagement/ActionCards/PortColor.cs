@@ -5,5 +5,7 @@ public enum PortColor {
 	RED = 1 ,
 	GREEN,
 	BLUE,
-	YELLOW
+	YELLOW,
+	CYAN,
+	MAGENTA
 }
