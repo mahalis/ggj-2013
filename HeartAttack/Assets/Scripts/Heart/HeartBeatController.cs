@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HeartBeatController : MonoBehaviour {
 
-	float heartScale = 8f;
+	float heartScale = 10f;
 	
 	float pulseWidthMultiplier = 27f;
 	float beatPeriod = 1f;

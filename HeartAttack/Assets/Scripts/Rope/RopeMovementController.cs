@@ -4,13 +4,16 @@ using System.Collections;
 public class RopeMovementController : MonoBehaviour {
 
 	bool isFollowingMouse = false;
+	public bool isConnected = false;
 
 	int TIP_LAYER = 8;
 	int layerMask = 1 << 8;
 
 	// Use this for initialization
 	void Start () {
-		this.gameObject.AddComponent<BoxCollider>();
+		BoxCollider bc = this.gameObject.AddComponent<BoxCollider>();
+		bc.size = new Vector3(5,5,5);
+
 		this.gameObject.layer = TIP_LAYER;
 	}
 	
@@ -34,23 +37,27 @@ public class RopeMovementController : MonoBehaviour {
 		        if (hit.transform == this.transform){
 			        isFollowingMouse = true;
 			        Debug.Log("GRABBED ROPE");
-			        rigidbody.AddForce(new Vector3(500, 0, 0));
+			        rigidbody.isKinematic = true;
+			        isConnected = false;
 			    }
 		    }
 		} else if ( Input.GetMouseButtonUp(0) ) {
 			isFollowingMouse = false;
+			if (!isConnected){
+				rigidbody.isKinematic = false;	
+			}
+			
 		}
 	}
 
 	void followMouse () {
-		Vector3 mouseWorldPt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Debug.Log("mouseWorldPt " + mouseWorldPt);
-		//Vector3 newPos = this.transform.localPosition;
-		//Debug.Log("current : " + this.transform.localPosition);
-		//Debug.Log("newPos : " + newPos);
-		//rigidbody.MovePosition(newPos);
+		Vector3 pos = Input.mousePosition;
+		pos.z = this.transform.position.z;
+		Vector3 mouseWorldPt = Camera.main.ScreenToWorldPoint(pos);
+		rigidbody.MovePosition(mouseWorldPt);
+	}
 
-		//Vector3 localPt = transform.parent.InverseTransformPoint(mouseWorldPt);
-		//Debug.Log("localPt : " + localPt);
+	public void stopDragging() {
+		isFollowingMouse = false;
 	}
 }

@@ -12,7 +12,7 @@ public class RopeController : MonoBehaviour {
 		Vector3 position = transform.position;
 		Rigidbody lastBody = GetComponent<Rigidbody>();
 		Quaternion startRotation = lastBody.transform.rotation;
-		Vector3 baseOffset = new Vector3(0, -0.3f, 0);
+		Vector3 baseOffset = new Vector3(0, -0.6f, 0);
 		Vector3 transformedOffset = startRotation * baseOffset;
 		Quaternion bendRotation = Quaternion.AngleAxis(20, new Vector3(0, 0, (position.x > 0) ? 1 : -1));
 		for(int i = 0; i < numSegments; i++) {
