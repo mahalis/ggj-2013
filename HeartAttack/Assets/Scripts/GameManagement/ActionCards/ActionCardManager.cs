@@ -15,6 +15,8 @@ public class ActionCardManager : MonoBehaviour {
 	float startTransitionX = 0;
 	float transitionCompletedTime = 0f;
 	bool isTransitioningCompleted = false;
+
+	float ACTION_CARD_SIZE = 2f;
 	
 	private static ActionCardManager instance;
 	public static ActionCardManager getInstance() {
@@ -31,7 +33,7 @@ public class ActionCardManager : MonoBehaviour {
 		}
 
 		activeActionCards = new List<ActionCard>();
-		this.gameObject.transform.localPosition = new Vector3(-GameConfig.ACTION_CARD_HEIGHT/2f,GameConfig.ACTION_CARD_HEIGHT/2f,0);
+		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f,ACTION_CARD_SIZE/2f,0);
 	}	
 
 	void Update() {
@@ -58,7 +60,7 @@ public class ActionCardManager : MonoBehaviour {
 		
 		newActionCard.portColors = buildPortColorListOfLength(numColors, activeActionCards.Count);
 
-		newActionCard.transform.localPosition = new Vector3(0,GameConfig.ACTION_CARD_HEIGHT * activeActionCards.Count,0);
+		newActionCard.transform.localPosition = new Vector3(0,ACTION_CARD_SIZE * activeActionCards.Count,0);
 
 		activeActionCards.Add(newActionCard);
 		pushActiveCardsOnScreen();
@@ -81,9 +83,6 @@ public class ActionCardManager : MonoBehaviour {
 					}			
 				} while(!success);
 			}
-
-
-			Debug.Log("target index : " + targetIndex);
 			if (targetIndex == 0) { // nothing to compaer to
 				passedPreviousCompare = true;
 			} else { // guarantee no direct color combo repeats
@@ -111,7 +110,7 @@ public class ActionCardManager : MonoBehaviour {
 
 	void pushActiveCardsOnScreen() {
 		startTransitionY = this.gameObject.transform.localPosition.y;
-		targetTransitionY = ((activeActionCards.Count * GameConfig.ACTION_CARD_HEIGHT) - (GameConfig.ACTION_CARD_HEIGHT/2f)) * -1; // subtract half a card for proper alignment
+		targetTransitionY = ((activeActionCards.Count * ACTION_CARD_SIZE) - (ACTION_CARD_SIZE/2f)) * -1; // subtract half a card for proper alignment
 		isTransitioning = true;
 		transitionTime = 0f;
 	}
@@ -148,7 +147,7 @@ public class ActionCardManager : MonoBehaviour {
 	void activeActionCardHasBeenCompleted() {
 		ActionCard completedCard = activeActionCards[0];
 		startTransitionX = completedCard.transform.localPosition.x;
-		targetTransitionX = startTransitionX + GameConfig.ACTION_CARD_HEIGHT;
+		targetTransitionX = startTransitionX + ACTION_CARD_SIZE;
 
 		transitionCompletedTime = 0f;
 		isTransitioningCompleted = true;
@@ -178,12 +177,12 @@ public class ActionCardManager : MonoBehaviour {
 
 		this.gameObject.transform.localPosition = new Vector3(
 			this.gameObject.transform.localPosition.x,
-			(((activeActionCards.Count * GameConfig.ACTION_CARD_HEIGHT) - (GameConfig.ACTION_CARD_HEIGHT/2f)) * -1),
+			(((activeActionCards.Count * ACTION_CARD_SIZE) - (ACTION_CARD_SIZE/2f)) * -1),
 			this.gameObject.transform.localPosition.z
 		);
 
 		for (int i = 0; i < activeActionCards.Count; i ++){
-			activeActionCards[i].transform.localPosition = new Vector3(0,GameConfig.ACTION_CARD_HEIGHT * i,0);
+			activeActionCards[i].transform.localPosition = new Vector3(0,ACTION_CARD_SIZE * i,0);
 		}
 	}
 

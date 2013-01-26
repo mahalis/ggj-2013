@@ -65,7 +65,7 @@ MonoBehaviour:
   - name: action-card-placeholder
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .00999999978, y: .00999999978, z: .00999999978}
     texture: {fileID: 2800000, guid: 29673dcabb21f442b815f703b29832c2, type: 3}
     materialId: 0
     anchor: 4

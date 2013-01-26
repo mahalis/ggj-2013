@@ -33,6 +33,8 @@ public class RopeController : MonoBehaviour {
 			lastBody = newSegment.GetComponent<Rigidbody>();
 		}
 		//lastBody.AddForce(new Vector3(500, 0, 0));
+
+		lastBody.gameObject.AddComponent<RopeMovementController>();
 	}
 	
 	// Update is called once per frame
