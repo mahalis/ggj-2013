@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: ActionCards
+  m_Name: Generic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,30 +41,34 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
-  - name: action-card-placeholder
+  - name: white-pixel
     boundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 256, y: 256, z: 0}
+    - {x: 2, y: 2, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 256, y: 256, z: 0}
+    - {x: 2, y: 2, z: 0}
     texelSize: {x: 1, y: 1}
     positions:
-    - {x: -128, y: -128, z: 0}
-    - {x: 128, y: -128, z: 0}
-    - {x: -128, y: 128, z: 0}
-    - {x: 128, y: 128, z: 0}
-    normals: []
+    - {x: -1, y: -1, z: 0}
+    - {x: 1, y: -1, z: 0}
+    - {x: -1, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals:
+    - {x: 0, y: 0, z: -1}
+    - {x: 0, y: 0, z: -1}
+    - {x: 0, y: 0, z: -1}
+    - {x: 0, y: 0, z: -1}
     tangents: []
     uvs:
-    - {x: .00390820298, y: .00390820298}
-    - {x: .503904283, y: .00390820298}
-    - {x: .00390820298, y: .503904283}
-    - {x: .503904283, y: .503904283}
+    - {x: .250124991, y: .250124991}
+    - {x: .499875009, y: .250124991}
+    - {x: .250124991, y: .499875009}
+    - {x: .499875009, y: .499875009}
     indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 02034d394d7e44891997e9d45823adf2, type: 2}
+    material: {fileID: 2100000, guid: a29295b0041ca48a5b44a59549237a44, type: 2}
     materialId: 0
-    sourceTextureGUID: 29673dcabb21f442b815f703b29832c2
+    sourceTextureGUID: 8f4494a81dd3345f28c6202e75e05249
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -81,17 +85,17 @@ MonoBehaviour:
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
-  - {fileID: 2100000, guid: 02034d394d7e44891997e9d45823adf2, type: 2}
+  - {fileID: 2100000, guid: a29295b0041ca48a5b44a59549237a44, type: 2}
   textures:
-  - {fileID: 2800000, guid: d90b0390cc40c4496888769d7dea118c, type: 3}
+  - {fileID: 2800000, guid: abfda2dcd328f4723bcaef88e1778035, type: 3}
   allowMultipleAtlases: 0
-  spriteCollectionGUID: b8e1932f764e84d968df4ad9bf8c9d50
-  spriteCollectionName: ActionCards
+  spriteCollectionGUID: fa245cdf00d04428abd0f20f1f851d55
+  spriteCollectionName: Generic
   assetName: 
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1201688647
-  dataGuid: 63a2373a08b354161991bea32c8192ac
+  buildKey: 1784401394
+  dataGuid: 510ee7ef4d39946a7a1f6ae9d33f68df
   managedSpriteCollection: 0
   hasPlatformData: 0
   spriteCollectionPlatforms: []

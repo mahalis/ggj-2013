@@ -40,3 +40,14 @@ MonoBehaviour:
     - 1359146231
     managedSpriteCollection: 0
     version: 3
+  - name: Generic
+    spriteCollectionGUID: fa245cdf00d04428abd0f20f1f851d55
+    spriteCollectionDataGUID: 510ee7ef4d39946a7a1f6ae9d33f68df
+    spriteNames:
+    - white-pixel
+    spriteTextureGUIDs:
+    - 8f4494a81dd3345f28c6202e75e05249
+    spriteTextureTimeStamps:
+    - 1359147285
+    managedSpriteCollection: 0
+    version: 3
