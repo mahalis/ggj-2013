@@ -16,6 +16,7 @@ public class RopeMovementController : MonoBehaviour {
 	void Start () {
 		BoxCollider bc = this.gameObject.AddComponent<BoxCollider>();
 		bc.size = new Vector3(5,5,5);
+		bc.isTrigger = true;
 
 		this.gameObject.layer = TIP_LAYER;
 	}
