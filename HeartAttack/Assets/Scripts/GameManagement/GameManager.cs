@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour,IEventListener {
 	public ViewManager viewManager;
 	public List<NodeConnection> nodeConnections;
 
@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 	
 	const float RANDOM_TIME_ADJUSTMENT = 0.5f;
 	const float BASE_HEART_RATE = 60;
-	const float HEART_RATE_GROWTH = 0.2f; // beats per minute per second
+	const float HEART_RATE_GROWTH = 0.1f; // beats per minute per second
 	const float HEART_RATE_TIME_LOSS = 0.03f; // number of seconds per bpm
 	const float BASE_CARD_INTERVAL = 6.0f;
 	
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager getInstance() {
 	    if (instance == null) {
 			instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+			EventManager.instance.AddListener(instance as IEventListener, "NodeConnectionsChangedEvent");	
 	    }
 	    return instance;
 	}
@@ -74,8 +75,16 @@ public class GameManager : MonoBehaviour {
 		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.YELLOW});
 	}
 
-	public void nodeWasConnected () {
-		Debug.Log("---------------");
+	bool IEventListener.HandleEvent(IEvent evt) {
+	    switch (evt.GetName()) {
+	    	case "NodeConnectionsChangedEvent" :
+	    		nodeConnectionsChanged();
+	    		break;
+	    }
+	    return false;
+	}
+
+	public void nodeConnectionsChanged () {
 		List<PortColor> connectedColors = new List<PortColor>();
 		foreach(NodeConnection nc in nodeConnections) {
 			if (nc.isConnected){

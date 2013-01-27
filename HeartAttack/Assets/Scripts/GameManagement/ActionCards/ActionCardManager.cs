@@ -134,14 +134,16 @@ public class ActionCardManager : MonoBehaviour {
 		if (activeActionCards.Count >0) {
 			ActionCard activeActionCard = activeActionCards[0];
 			int requiredConnections = activeActionCard.portColors.Count;
-			int correctConnections = 0;
-			foreach (PortColor pc in connectedPortColors) {
-				if (activeActionCard.portColors.Contains(pc)){
-					correctConnections ++;
+			if (connectedPortColors.Count == requiredConnections){
+				int correctConnections = 0;
+				foreach (PortColor pc in connectedPortColors) {
+					if (activeActionCard.portColors.Contains(pc)){
+						correctConnections ++;
+					}
 				}
-			}
-			if (correctConnections == requiredConnections) {
-				activeActionCardHasBeenCompleted();
+				if (correctConnections == requiredConnections) {
+					activeActionCardHasBeenCompleted();
+				}
 			}
 		}		
 	}
