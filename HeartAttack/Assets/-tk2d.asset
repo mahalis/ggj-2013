@@ -36,6 +36,9 @@ MonoBehaviour:
   - assetGUID: 5d7663751d0e140d989900420010cdee
     dataGUID: 
     managed: 0
+  - assetGUID: 14a2ae276c3c34ee08c36dc53d3f3c8e
+    dataGUID: 
+    managed: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -68,14 +71,17 @@ MonoBehaviour:
     - white-pixel
     - Replay1
     - Start-thing1
+    - bkg
     spriteTextureGUIDs:
     - 8f4494a81dd3345f28c6202e75e05249
     - 34e17af1bae37437fb78f9d517f18e43
     - dc6d8b05d7ddb4ab989a9a12b0a51750
+    - 2eb4f9190042f4442ac491b3e356552c
     spriteTextureTimeStamps:
     - 1359156384
     - 1359227242
     - 1359227195
+    - 1359226227
     managedSpriteCollection: 0
     version: 3
   - name: Frankenstein
@@ -218,24 +224,24 @@ MonoBehaviour:
     - 1359254442
     - 1359254442
     - 1359254444
+    - 1359256758
+    - 1359256758
+    - 1359256758
+    - 1359256758
+    - 1359256758
+    - 1359256760
+    - 1359256760
     - 1359254444
     - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254444
-    - 1359254446
-    - 1359254446
-    - 1359254446
-    - 1359254446
+    - 1359256760
+    - 1359256760
+    - 1359256760
+    - 1359256760
+    - 1359256760
+    - 1359256760
+    - 1359256760
+    - 1359256760
+    - 1359256760
     - 1359254446
     - 1359254446
     - 1359238116
@@ -730,5 +736,40 @@ MonoBehaviour:
     - 1359253052
     - 1359253052
     - 1359253052
+    managedSpriteCollection: 0
+    version: 3
+  - name: Scientist
+    spriteCollectionGUID: 75e25a9a95b3c443d9ffed0970dc4b2b
+    spriteCollectionDataGUID: 4d0148f846dac4183a001901fb1784b3
+    spriteNames:
+    - Scientist003
+    - Scientist006
+    - Scientist004
+    - Scientist002
+    - Scientist001
+    - Scientist005
+    - Scientist009
+    - Scientist008
+    - Scientist007
+    spriteTextureGUIDs:
+    - 116ae85e0cf994317bf71d45a5fee56e
+    - 48e3e0253f2194c28835e1050c3d961b
+    - 5c731993cfd474f9a9d14a3743c0328a
+    - 753f63430e083422e9a834ba2de7d050
+    - ac36713f252bf46fc8ecea1fe4907ebb
+    - d5269bed46111495383a60711c56dde3
+    - 29adaabb5a49c4c0aa008b9ee463e6b2
+    - 66d450c12cdfa4827966ce85658ecae8
+    - 8568fa5b39bb142d1bbcbb1a7b62a910
+    spriteTextureTimeStamps:
+    - 1359270352
+    - 1359270364
+    - 1359270354
+    - 1359270348
+    - 1359270342
+    - 1359270358
+    - 1359270406
+    - 1359270380
+    - 1359270372
     managedSpriteCollection: 0
     version: 3

@@ -5,7 +5,7 @@ public class HeartBeatController : MonoBehaviour {
 
 	float heartScale = 15f;
 	
-	float pulseWidthMultiplier = 27f;
+	float pulseWidthMultiplier = 25f;
 	float beatPeriod = 1f;
 
 	float smallerContractionScale = 0.98f;
@@ -15,6 +15,8 @@ public class HeartBeatController : MonoBehaviour {
 	float largerContractionTarget = 0f;
 
 	float beatAccum = 0f;
+
+	float BPM = 60f;
 
 	enum HeartState {
 		contractSamll,
@@ -102,13 +104,18 @@ public class HeartBeatController : MonoBehaviour {
 			if (heartState == HeartState.pulseWait){
 				beatAccum += Time.deltaTime * pulseWidthMultiplier;
 			} else {
-				beatAccum += Time.deltaTime / beatPeriod;
+				beatAccum += Time.deltaTime * beatPeriod;
 			}		
 		}
 	}
 
-	public void setBeatPeriod(float newBeatPeriod) {
-		beatPeriod = newBeatPeriod;
+	public void setBPM(float newBPM) {
+		BPM = newBPM;
+		float beatsPerSec = BPM/60f;
+		float pulseLength = (1f/pulseWidthMultiplier) * 6f;
+		float newPeriodWait = Mathf.Clamp((1f/beatsPerSec)-pulseLength,0,10);
+		this.beatPeriod = 1f/newPeriodWait;
+		//Debug.Log("PERIOD WAIT : " + this.beatPeriod);
 	}
 
 	void moveEmOnUp () {
@@ -143,16 +150,6 @@ public class HeartBeatController : MonoBehaviour {
 			beatAccum = 0f;
 			heartState = HeartState.periodWait;
 			yield return null;
-			/*
-			this.gameObject.transform.localScale = (new Vector3(heartScale * smallerContractionScale,heartScale * smallerContractionScale,heartScale * smallerContractionScale));
-			yield return new WaitForSeconds(pulseWidth);
-			this.gameObject.transform.localScale = (new Vector3(heartScale,heartScale,heartScale));
-			yield return new WaitForSeconds(pulseWidth);
-			this.gameObject.transform.localScale = (new Vector3(heartScale * biggerContractionScale,heartScale * biggerContractionScale,heartScale * biggerContractionScale));
-			yield return new WaitForSeconds(pulseWidth);
-			this.gameObject.transform.localScale = (new Vector3(heartScale,heartScale,heartScale));
-			yield return new WaitForSeconds(beatPeriod);
-			*/
 		}
 	}
 

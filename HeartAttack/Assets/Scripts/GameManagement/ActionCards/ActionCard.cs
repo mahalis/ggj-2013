@@ -16,8 +16,14 @@ public class ActionCard : MonoBehaviour {
 	const float springK = 70f;
 	const float drag = 5f;
 
+	public bool isScientist = false;
+
 	void Start () {
 		buildPortColorBar();
+		if (isScientist) {
+			SoundManager.getInstance().playSoundEffect("electricity");
+			EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
+		}
 	}
 	
 	void Update () {
