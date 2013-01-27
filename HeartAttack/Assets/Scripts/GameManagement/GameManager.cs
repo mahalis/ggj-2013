@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 					nextCardTime = now + (BASE_CARD_INTERVAL - (currentHeartRate - BASE_HEART_RATE) * HEART_RATE_TIME_LOSS) + Random.Range(-RANDOM_TIME_ADJUSTMENT, RANDOM_TIME_ADJUSTMENT);
 				} else {
 					// Game Over
+					SoundManager.getInstance().playGameOver();
 					viewManager.setGameOverViewVisible(true);
 					viewManager.setScore((int)currentScore);
 					gameIsActive = false;
@@ -75,20 +76,8 @@ public class GameManager : MonoBehaviour,IEventListener {
 	}
 
 	public void testingButtonPressed () {
-		ActionCardManager.getInstance().generateNewAction(1);
-	}
-
-	public void blue () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.BLUE});
-	}
-	public void green () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.GREEN});
-	}
-	public void red () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.RED});
-	}
-	public void yellow () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.YELLOW});
+		//ActionCardManager.getInstance().generateNewAction(1);
+		EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
 	}
 
 	bool IEventListener.HandleEvent(IEvent evt) {
@@ -117,6 +106,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 	}
 
 	public void replayGame () {
+		SoundManager.getInstance().resumeTheme();
 		currentScore = 0;
 		ActionCardManager.getInstance().reset();
 		currentHeartRate = BASE_HEART_RATE;

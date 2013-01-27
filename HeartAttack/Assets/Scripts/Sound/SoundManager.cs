@@ -4,6 +4,7 @@ using System.Collections;
 public class SoundManager : MonoBehaviour,IEventListener {
 	AudioSource upbeatSource;
 	AudioSource downbeatSource;
+	AudioSource themeSource;
 	
 	private static SoundManager instance;
 	public static SoundManager getInstance() {
@@ -57,19 +58,26 @@ public class SoundManager : MonoBehaviour,IEventListener {
 	}
 
 	void playTheme () {
-		AudioSource source;
+		
 		AudioClip clip;
-
-		source = this.gameObject.AddComponent("AudioSource") as AudioSource;
+		themeSource = this.gameObject.AddComponent("AudioSource") as AudioSource;
 		clip = UnityEngine.Resources.Load("Audio/theme") as AudioClip;
-		source.volume  = 0.5f;
+		themeSource.volume  = 0.5f;
 		
 
-		if (clip != null && source != null) {
-			source.clip = clip;
-			source.loop = true;
-			source.Play();
+		if (clip != null && themeSource != null) {
+			themeSource.clip = clip;
+			themeSource.loop = true;
+			themeSource.Play();
 		} 			
+	}
+
+	public void playGameOver () {
+		themeSource.Pause();
+		playSoundEffect("gameOver");
+	}
+	public void resumeTheme () {
+		themeSource.Play();
 	}
 
 	public void playHeartUpBeat() {
