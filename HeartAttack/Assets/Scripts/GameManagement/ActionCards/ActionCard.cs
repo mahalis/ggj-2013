@@ -5,6 +5,14 @@ using System.Collections.Generic;
 public class ActionCard : MonoBehaviour {
 	float BAR_WIDTH = 1.7f;
 
+	public enum StartingSoundEffect {
+		None,
+		Electricity,
+		Robot,
+		Hiss,
+	}
+	public StartingSoundEffect startingSoundEffect = StartingSoundEffect.None;
+
 
 	public List<PortColor> portColors;
 	public tk2dSprite cardSprite;
@@ -14,9 +22,23 @@ public class ActionCard : MonoBehaviour {
 
 	void Start () {
 		buildPortColorBar();
+		playStartingSoundEffect();
 		if (isScientist) {
-			SoundManager.getInstance().playSoundEffect("electricity");
 			EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
+		}
+	}
+
+	void playStartingSoundEffect() {
+		switch(startingSoundEffect) {
+			case StartingSoundEffect.Electricity :
+				SoundManager.getInstance().playSoundEffect("electricity");
+			break;
+			case StartingSoundEffect.Hiss :
+				SoundManager.getInstance().playSoundEffect("hiss");
+			break;
+			case StartingSoundEffect.Robot :
+				SoundManager.getInstance().playSoundEffect("robot");
+			break;
 		}
 	}
 
