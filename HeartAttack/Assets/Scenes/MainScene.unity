@@ -2029,7 +2029,7 @@ MonoBehaviour:
   upperLeftAnchor: {fileID: 0}
   startGameView: {fileID: 123679320}
   gameOverView: {fileID: 2043628149}
-  scoreMesh: {fileID: 0}
+  scoreMesh: {fileID: 1044005479}
 --- !u!1 &316579990
 GameObject:
   m_ObjectHideFlags: 0
