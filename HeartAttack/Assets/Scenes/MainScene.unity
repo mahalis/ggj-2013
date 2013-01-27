@@ -298,7 +298,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 2986344447
       minMaxState: 0
     startSize:
       scalar: 8.97000027
@@ -3471,6 +3471,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e606739fe52e742bcb4b6cca80bcbabd, type: 3}
   m_Name: 
+  defaultBackground: {fileID: 2800000, guid: 2eb4f9190042f4442ac491b3e356552c, type: 3}
+  zapBackground1: {fileID: 2800000, guid: 253eb01d475804eda81cfa409e0961b6, type: 3}
+  zapBackground2: {fileID: 2800000, guid: 9fd6ece30aa814c10b60efe324df0cfb, type: 3}
 --- !u!33 &474911247
 MeshFilter:
   m_ObjectHideFlags: 0
