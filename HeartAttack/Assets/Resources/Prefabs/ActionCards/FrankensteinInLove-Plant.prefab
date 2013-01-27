@@ -147,9 +147,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97f9c078aa75c4705b1dc9f4d99c74cf, type: 3}
   m_Name: 
+  startingSoundEffect: 6
   portColors: 00000000
   cardSprite: {fileID: 11400004}
   portColorPrefab: {fileID: 100000, guid: 6a178d430408e4a9eba37bd4f8c91951, type: 2}
+  targetPosition: {x: 0, y: 0}
+  velocity: {x: 0, y: 0}
+  isScientist: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
