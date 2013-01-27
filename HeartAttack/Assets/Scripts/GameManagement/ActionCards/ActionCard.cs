@@ -10,8 +10,14 @@ public class ActionCard : MonoBehaviour {
 	public tk2dSprite cardSprite;
 	public GameObject portColorPrefab;
 
+	public bool isScientist = false;
+
 	void Start () {
 		buildPortColorBar();
+		if (isScientist) {
+			SoundManager.getInstance().playSoundEffect("electricity");
+			EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
+		}
 	}
 
 

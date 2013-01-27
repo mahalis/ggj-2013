@@ -51,15 +51,15 @@ MonoBehaviour:
   - name: 
     spriteCollection: {fileID: 0}
   managedSpriteCollection: 0
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   forceTextureSize: 0
   forcedTextureWidth: 1024
   forcedTextureHeight: 1024
   textureCompression: 0
   atlasWidth: 1024
-  atlasHeight: 1024
+  atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 53.1387329
+  atlasWastage: 38.7268066
   allowMultipleAtlases: 0
   textureParams:
   - name: white-pixel
@@ -145,6 +145,43 @@ MonoBehaviour:
     anchor: 4
     anchorX: 246
     anchorY: 300
+    overrideMesh: {fileID: 0}
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 1
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: bkg
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 2eb4f9190042f4442ac491b3e356552c, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 512
+    anchorY: 384
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []

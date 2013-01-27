@@ -115,7 +115,7 @@ public class HeartBeatController : MonoBehaviour {
 		float pulseLength = (1f/pulseWidthMultiplier) * 6f;
 		float newPeriodWait = Mathf.Clamp((1f/beatsPerSec)-pulseLength,0,10);
 		this.beatPeriod = 1f/newPeriodWait;
-		Debug.Log("PERIOD WAIT : " + this.beatPeriod);
+		//Debug.Log("PERIOD WAIT : " + this.beatPeriod);
 	}
 
 	void moveEmOnUp () {
