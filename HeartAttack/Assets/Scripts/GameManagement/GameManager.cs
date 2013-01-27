@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 
 	const int MAX_ACTION_CARDS =5;
 
+	float currentScore = 0f;
 	bool gameIsActive = false;
 	
 	private static GameManager instance;
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 				} else {
 					// Game Over
 					viewManager.setGameOverViewVisible(true);
+					viewManager.setScore((int)currentScore);
 					gameIsActive = false;
 				}				
 			}
@@ -109,11 +111,13 @@ public class GameManager : MonoBehaviour,IEventListener {
 	}
 
 	public void startGame () {
+		currentScore = 0;
 		gameIsActive = true;
 		viewManager.hideStartGameView();
 	}
 
 	public void replayGame () {
+		currentScore = 0;
 		ActionCardManager.getInstance().reset();
 		currentHeartRate = BASE_HEART_RATE;
 		gameIsActive = true;
@@ -125,4 +129,8 @@ public class GameManager : MonoBehaviour,IEventListener {
 		}
 	}
 
+	public void completedActionCardWithNumberOfColors(int numColors) {
+		int prime = 13;
+		currentScore += (prime * numColors) * currentHeartRate;
+	}
 }

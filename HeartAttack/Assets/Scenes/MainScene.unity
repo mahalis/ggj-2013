@@ -1919,6 +1919,7 @@ MonoBehaviour:
   upperLeftAnchor: {fileID: 0}
   startGameView: {fileID: 123679320}
   gameOverView: {fileID: 2043628149}
+  scoreMesh: {fileID: 1044005479}
 --- !u!1 &338662815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4378,7 +4379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77abc78ea85804ac99573c0235736385, type: 3}
   m_Name: 
   segment: {fileID: 100002, guid: 79634e90860704452b4a041ac1353e85, type: 2}
-  numSegments: 20
+  numSegments: 25
   shouldCreateBent: 1
 --- !u!23 &848997332
 Renderer:
@@ -4576,7 +4577,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1d795a530ce8e4787aa34a17f1bf382e, type: 2}
       propertyPath: numSegments
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 100060, guid: 1d795a530ce8e4787aa34a17f1bf382e, type: 2}
       propertyPath: m_Name

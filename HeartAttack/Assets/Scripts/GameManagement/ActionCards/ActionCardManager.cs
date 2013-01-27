@@ -143,6 +143,7 @@ public class ActionCardManager : MonoBehaviour {
 				}
 				if (correctConnections == requiredConnections) {
 					activeActionCardHasBeenCompleted();
+					GameManager.getInstance().completedActionCardWithNumberOfColors(activeActionCard.portColors.Count);
 				}
 			}
 		}		

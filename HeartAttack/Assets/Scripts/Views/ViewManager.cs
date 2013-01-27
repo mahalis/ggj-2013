@@ -8,6 +8,7 @@ public class ViewManager : MonoBehaviour {
 
 	public GameObject startGameView;
 	public GameObject gameOverView;
+	public TextMesh scoreMesh;
 
 	void Start() {
 		setGameOverViewVisible(false);
@@ -32,6 +33,13 @@ public class ViewManager : MonoBehaviour {
 
 	public void setGameOverViewVisible(bool visible) {
 		gameOverView.SetActive(visible);
+	}
+
+	public void setScore(int score) {
+		if (scoreMesh){
+			scoreMesh.text = score.ToString();
+		}
+		Debug.Log("YOUR SCORE : " + score);
 	}
 	
 }
