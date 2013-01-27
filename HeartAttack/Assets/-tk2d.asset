@@ -72,16 +72,19 @@ MonoBehaviour:
     - Replay1
     - Start-thing1
     - bkg
+    - tut
     spriteTextureGUIDs:
     - 8f4494a81dd3345f28c6202e75e05249
     - 34e17af1bae37437fb78f9d517f18e43
     - dc6d8b05d7ddb4ab989a9a12b0a51750
     - 2eb4f9190042f4442ac491b3e356552c
+    - 75b73fabcdac2469b903df4bcf366ca7
     spriteTextureTimeStamps:
     - 1359156384
     - 1359227242
     - 1359227195
     - 1359226227
+    - 1359287099
     managedSpriteCollection: 0
     version: 3
   - name: Frankenstein
