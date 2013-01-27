@@ -4,6 +4,7 @@ using System.Collections;
 public class RopeController : MonoBehaviour {
 	
 	public GameObject segment;
+	public GameObject finalSegment;
 	public int numSegments;
 	public bool shouldCreateBent;
 	
@@ -25,10 +26,18 @@ public class RopeController : MonoBehaviour {
 			} else {
 				position += transformedOffset;
 			}
-			GameObject newSegment = (GameObject)Instantiate(segment, position, startRotation);
+
+			GameObject newSegment;
+			if (i < numSegments-1){
+				newSegment = (GameObject)Instantiate(segment, position, startRotation);
+			} else {
+				newSegment = (GameObject)Instantiate(finalSegment, position, startRotation);
+			}
 			newSegment.transform.parent = this.transform.parent;
-			ConfigurableJoint joint = ((ConfigurableJoint)(newSegment.GetComponent<ConfigurableJoint>()));
+			
+			Joint joint = newSegment.GetComponent<Joint>();
 			joint.connectedBody = lastBody;
+			
 			lastBody = newSegment.GetComponent<Rigidbody>();
 		}
 		//lastBody.AddForce(new Vector3(500, 0, 0));

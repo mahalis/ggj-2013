@@ -59,7 +59,7 @@ MonoBehaviour:
   atlasWidth: 1024
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 38.7268066
+  atlasWastage: 27.3246288
   allowMultipleAtlases: 0
   textureParams:
   - name: white-pixel
@@ -182,6 +182,43 @@ MonoBehaviour:
     anchor: 4
     anchorX: 512
     anchorY: 384
+    overrideMesh: {fileID: 0}
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 1
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: tut
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 75b73fabcdac2469b903df4bcf366ca7, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 242
+    anchorY: 242
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []

@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77abc78ea85804ac99573c0235736385, type: 3}
   m_Name: 
   segment: {fileID: 100002, guid: 79634e90860704452b4a041ac1353e85, type: 2}
+  finalSegment: {fileID: 100006, guid: 8ac25ccbbfa264263b6c0a4377d5c5c9, type: 3}
   numSegments: 15
   shouldCreateBent: 0
 --- !u!1001 &100100000
