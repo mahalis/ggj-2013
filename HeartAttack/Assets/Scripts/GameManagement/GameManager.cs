@@ -76,20 +76,8 @@ public class GameManager : MonoBehaviour,IEventListener {
 	}
 
 	public void testingButtonPressed () {
-		ActionCardManager.getInstance().generateNewAction(1);
-	}
-
-	public void blue () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.BLUE});
-	}
-	public void green () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.GREEN});
-	}
-	public void red () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.RED});
-	}
-	public void yellow () {
-		ActionCardManager.getInstance().checkForActionCompletion(new List<PortColor>(){PortColor.YELLOW});
+		//ActionCardManager.getInstance().generateNewAction(1);
+		EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
 	}
 
 	bool IEventListener.HandleEvent(IEvent evt) {

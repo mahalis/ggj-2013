@@ -45,7 +45,8 @@ public class RopeMovementController : MonoBehaviour,IEventListener {
 	    return false;
 	}
 	void disconnect() {
-		 isConnected = false;
+		isConnected = false;
+		rigidbody.isKinematic = false;
 		if (activeNodeConnection != null){
         	activeNodeConnection.disconnectRope();
         	this.transform.rotation = preConnectionRotation;
@@ -63,8 +64,8 @@ public class RopeMovementController : MonoBehaviour,IEventListener {
 		        if (hit.transform == this.transform){
 		        	grabPosition = Input.mousePosition;
 			        isFollowingMouse = true;
-			        rigidbody.isKinematic = true;
 			        disconnect();
+			        rigidbody.isKinematic = true;
 			    }
 		    }
 		} else if ( Input.GetMouseButtonUp(0) ) {
