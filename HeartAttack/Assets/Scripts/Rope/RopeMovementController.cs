@@ -6,6 +6,7 @@ public class RopeMovementController : MonoBehaviour {
 
 	bool isFollowingMouse = false;
 	public bool isConnected = false;
+	NodeConnection activeNodeConnection;
 
 	Vector2 grabPosition;
 
@@ -43,6 +44,10 @@ public class RopeMovementController : MonoBehaviour {
 			        isFollowingMouse = true;
 			        rigidbody.isKinematic = true;
 			        isConnected = false;
+			        if (activeNodeConnection != null){
+			        	activeNodeConnection.disconnectRope();
+			        }
+			        activeNodeConnection = null;
 			    }
 		    }
 		} else if ( Input.GetMouseButtonUp(0) ) {
@@ -71,6 +76,7 @@ public class RopeMovementController : MonoBehaviour {
 				if (dist < 1f) {
 					isConnected = true;
 					nc.connectWithRope(this);
+					activeNodeConnection = nc;
 					GameManager.getInstance().nodeWasConnected();
 					break;
 				}

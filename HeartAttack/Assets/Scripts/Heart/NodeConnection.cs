@@ -8,6 +8,7 @@ public class NodeConnection : MonoBehaviour {
 	public void connectWithRope(RopeMovementController rc) {
 		rc.stopDragging();
     	rc.rigidbody.MovePosition(this.transform.position);
+    	rc.rigidbody.MoveRotation(this.transform.rotation);
     	rc.isConnected = true;
     	this.isConnected = true;
 	}
