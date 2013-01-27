@@ -50,6 +50,9 @@ public class RopeMovementController : MonoBehaviour {
 			        	activeNodeConnection.disconnectRope();
 			        	this.transform.rotation = preConnectionRotation;
 			        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
+			        	//EventManager.instance.TriggerEvent(new NodeDisconnectedEvent());
+			        	SoundManager.getInstance().playSoundEffect("squish");
+
 			        }
 			        activeNodeConnection = null;
 			    }

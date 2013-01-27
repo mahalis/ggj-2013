@@ -1523,7 +1523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &123679321
 Transform:
   m_ObjectHideFlags: 0
@@ -6896,6 +6896,7 @@ GameObject:
   - 81: {fileID: 1197242806}
   - 132: {fileID: 1197242807}
   - 45: {fileID: 1197242811}
+  - 114: {fileID: 1197242812}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -6985,6 +6986,16 @@ Skybox:
   m_GameObject: {fileID: 1197242805}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 7c9b2e80d466a4f3899941c6afb86ed8, type: 2}
+--- !u!114 &1197242812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1197242805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef9b48082d314e24b54b87e67f21ea8, type: 3}
+  m_Name: 
 --- !u!1001 &1208479557
 Prefab:
   m_ObjectHideFlags: 0
@@ -12244,7 +12255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2043628150
 Transform:
   m_ObjectHideFlags: 0

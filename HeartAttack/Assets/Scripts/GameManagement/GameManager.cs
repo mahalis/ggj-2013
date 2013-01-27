@@ -103,7 +103,6 @@ public class GameManager : MonoBehaviour,IEventListener {
 		List<PortColor> connectedColors = new List<PortColor>();
 		foreach(NodeConnection nc in nodeConnections) {
 			if (nc.isConnected){
-				Debug.Log("adding : " + nc.portColor);
 				connectedColors.Add(nc.portColor);
 			}
 		}
