@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 		if(gameIsActive){
 			float now = Time.time;
 			currentHeartRate += Time.deltaTime * HEART_RATE_GROWTH;
+			viewManager.setBpm(currentHeartRate);
 			if(now > nextCardTime) {
 				if (ActionCardManager.getInstance().numberOfActiveCards() < MAX_ACTION_CARDS){
 					newCard ();
