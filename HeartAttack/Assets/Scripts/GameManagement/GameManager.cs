@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 	const float BASE_HEART_RATE = 60;
 	const float HEART_RATE_GROWTH = 0.6f; // beats per minute per second
 	const float HEART_RATE_TIME_LOSS = 0.03f; // number of seconds per bpm
-	const float BASE_CARD_INTERVAL = 6.0f;
+	const float BASE_CARD_INTERVAL = 5.0f;
 	
 	const float EASY_CHANCE = 0.25f; // remove 1 color from next card
 	const float SUPER_EASY_CHANCE = 0.1f; // remove 2 colors from next card
@@ -55,12 +55,10 @@ public class GameManager : MonoBehaviour,IEventListener {
 					nextCardTime = now + (BASE_CARD_INTERVAL - (currentHeartRate - BASE_HEART_RATE) * HEART_RATE_TIME_LOSS) + Random.Range(-RANDOM_TIME_ADJUSTMENT, RANDOM_TIME_ADJUSTMENT);
 				} else {
 					// Game Over
-					/*
 					SoundManager.getInstance().playGameOver();
 					viewManager.setGameOverViewVisible(true);
 					viewManager.setScore((int)currentScore);
 					gameIsActive = false;
-					*/
 				}				
 			}
 		}
