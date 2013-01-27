@@ -1720,7 +1720,7 @@ MonoBehaviour:
   upperRightAnchor: {fileID: 0}
   upperLeftAnchor: {fileID: 0}
   startGameView: {fileID: 123679320}
-  gameOverView: {fileID: 0}
+  gameOverView: {fileID: 2043628149}
 --- !u!1 &313809481
 GameObject:
   m_ObjectHideFlags: 0
