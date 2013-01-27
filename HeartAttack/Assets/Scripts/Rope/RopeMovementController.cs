@@ -73,11 +73,11 @@ public class RopeMovementController : MonoBehaviour {
 	}
 
 	void checkForAttachment() {
-		if (Vector2.Distance(grabPosition, Input.mousePosition) > 75f){
+		if (Vector2.Distance(grabPosition, Input.mousePosition) > 100f){
 			List<NodeConnection> connections = GameManager.getInstance().nodeConnections;
 			foreach (NodeConnection nc in connections) {
 				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
-				if (dist < 1f && !nc.isConnected) {
+				if (dist < 1.5f && !nc.isConnected) {
 					preConnectionRotation = this.transform.rotation;
 					isConnected = true;
 					nc.connectWithRope(this);

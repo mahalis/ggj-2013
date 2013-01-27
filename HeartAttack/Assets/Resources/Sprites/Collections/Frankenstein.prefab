@@ -59,7 +59,7 @@ MonoBehaviour:
   atlasWidth: 1024
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 27.2727966
+  atlasWastage: 26.6598701
   allowMultipleAtlases: 0
   textureParams:
   - name: FrankensteinLove0001
