@@ -24,6 +24,12 @@ MonoBehaviour:
   - assetGUID: 6d3af003444cb46b491e73907fe3f0a5
     dataGUID: 
     managed: 0
+  - assetGUID: 2caf1d0a82d2648c4af7cb83d2ac67d2
+    dataGUID: 
+    managed: 0
+  - assetGUID: e5d3e006b00b74c139d742b31f38f1d7
+    dataGUID: 
+    managed: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -341,5 +347,201 @@ MonoBehaviour:
     - 1359240070
     - 1359240070
     - 1359240070
+    managedSpriteCollection: 0
+    version: 3
+  - name: Cat
+    spriteCollectionGUID: 7f54ef0ec9b814fe9bb768b90cc86b81
+    spriteCollectionDataGUID: 596f239bdf34f41c58163edec42e824c
+    spriteNames:
+    - Cat0001
+    - Cat0002
+    - Cat0003
+    - Cat0004
+    - Cat0005
+    - Cat0006
+    - Cat0007
+    - Cat0008
+    - Cat0009
+    - Cat0010
+    - Cat0011
+    - Cat0012
+    - Cat0013
+    - Cat0014
+    - Cat0015
+    - Cat0016
+    - Cat0017
+    - Cat0018
+    - Cat0019
+    - Cat0020
+    - Cat0021
+    - Cat0022
+    - Cat0023
+    - Cat0024
+    - Cat0025
+    - Cat0026
+    - Cat0027
+    - Cat0028
+    - Cat0029
+    - Cat0030
+    - Cat0031
+    - Cat0032
+    - Cat0033
+    - Cat0034
+    - Cat0035
+    - Cat0036
+    spriteTextureGUIDs:
+    - 2f62b14ecd9a74729b2df8d695620728
+    - 0fbece68b7b40479ba32653cbc94ad52
+    - ecc293bb8b2034ab59dc8c2555d16321
+    - 7cbe67a4aefe7452cbd3ede4a45d9e91
+    - 07e04141099f540cfa976789c793c826
+    - b4a0fd99ffbc840e18aa09901ef71e4c
+    - b46ebe8e42ba647c6a7ca24c840fea20
+    - 9049885714e304cd9a2549701cf6960d
+    - d524357b13a454879b35e9ed59b4a37c
+    - 1fa0ae640aefc4d319be5b1349dd06fd
+    - 950129bef5ee54eed8b09c0e81923888
+    - d03c253f4246349588186d69f05f4925
+    - a5e9f8a03b5f8478d83bd936df54a573
+    - 0f9329c042e8d49ee9b7c22bbfde22e8
+    - 4313cf8a3a78e4b15a92703842fa501e
+    - 0706e733e6a2e4c0c93f991a6b059289
+    - 7c9cb4802c809472db337ae4b932aac8
+    - 81e2b8ff2caf24c099a250230b46a057
+    - 734773339ac3440118c0a70881025c03
+    - 0fa34572fb8da4cd0a847483ebbb01a0
+    - 49dfcde12f40a410e9ee6dc23f53f599
+    - 2f7a8fb9c5a3349f8a4054680cf7178e
+    - b25c024ce82ce47e19bc5c0f240577ad
+    - 0b33624f108354937825252a45910c74
+    - 9c63d12aef1e24ea4b42a41b1db72e98
+    - 2e355e55718154ced95f12aeb7edca35
+    - ad8149013607b4da39905664272e9319
+    - c610fcb2791cd4d829a5e2bf0fb09dfe
+    - 072e3123165a84e3686eeef16449f42c
+    - e050bfcd0abc14443bde203da504bd28
+    - c52052b8d52a84f808f5c7a6d9e80e96
+    - 6e63dbe9539a841acb5866e82e06b978
+    - a7022f83692304fbd9f8d50b1de8e842
+    - f4a962be09cee40928b4f5b1ba65b54b
+    - c100efcd5f7654f08b8bbf079c39cafe
+    - 541d75922b2f34ae3b2a9cb08a56f0b4
+    spriteTextureTimeStamps:
+    - 1359240874
+    - 1359240874
+    - 1359240874
+    - 1359240874
+    - 1359240874
+    - 1359240874
+    - 1359240874
+    - 1359240874
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240876
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    - 1359240878
+    managedSpriteCollection: 0
+    version: 3
+  - name: BoxMonster
+    spriteCollectionGUID: da2ac421f3fcb4198a68ff6d219fd677
+    spriteCollectionDataGUID: 5eec893af4cad4ba4a12454204ddee53
+    spriteNames:
+    - BoxMonster0001
+    - BoxMonster0002
+    - BoxMonster0003
+    - BoxMonster0004
+    - BoxMonster0005
+    - BoxMonster0006
+    - BoxMonster0007
+    - BoxMonster0008
+    - BoxMonster0009
+    - BoxMonster0010
+    - BoxMonster0011
+    - BoxMonster0012
+    - BoxMonster0013
+    - BoxMonster0014
+    - BoxMonster0015
+    - BoxMonster0016
+    - BoxMonster0017
+    - BoxMonster0018
+    - BoxMonster0019
+    - BoxMonster0020
+    - BoxMonster0021
+    - BoxMonster0022
+    - BoxMonster0023
+    - BoxMonster0024
+    spriteTextureGUIDs:
+    - eb89ff263ad5b472cb6178ceef152b92
+    - cde6fd95e268a490dabf49e71f2a9c0c
+    - 3aea1079771ee49629211dcda47ba7f7
+    - c2075d6c259aa4f5fa1c9c371a31f7ed
+    - ef65e94393a834dff8fb04c1387e3313
+    - 3b7c79102780f4f62b93194de8caba1f
+    - 01994f6f428b944d79fce6b09ba87ea5
+    - ac3a087898eeb42f2a764219e46596a5
+    - 12c4af2983b7b449dba0304a3df38513
+    - b76ffe9169aea40b69f396208ff81a5c
+    - be8e654d9069c4a3a8d8153763f8728c
+    - 73ae0287eeaa74f5b8fa2590e811a756
+    - c2ea978ba94c24f9bbffcf3c83b5dfdf
+    - 2f1690bd1f58f473290162566323bf09
+    - abf61f7de8f764dda89ca957fbb6c8f1
+    - 44761c919fa8b4492985997f241e449a
+    - 80fc5fb220e02456c9c428a4a556275e
+    - e94cc26f812ea45d2a171440fc198c9b
+    - ac36999e7907b49b8b9458d1707757e2
+    - 47b036dad30e5481994298031b39cb4d
+    - b2c39a93c0d974115928c36ea52fa5e0
+    - 0321154fef2b949d18a2b15e802e03d2
+    - 90aa62e69367f4671a5f41cb09c3d039
+    - aaddba1dbfd574a228ba7323e21c9915
+    spriteTextureTimeStamps:
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246066
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
+    - 1359246068
     managedSpriteCollection: 0
     version: 3

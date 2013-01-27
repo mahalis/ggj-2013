@@ -7,8 +7,10 @@ public class ViewManager : MonoBehaviour {
 	public GameObject upperLeftAnchor;
 
 	public GameObject startGameView;
+	public GameObject gameOverView;
 
 	void Start() {
+		setGameOverViewVisible(false);
 		this.positionAnchors();
 	}
 
@@ -26,6 +28,10 @@ public class ViewManager : MonoBehaviour {
 
 	public void hideStartGameView() {
 		startGameView.SetActive(false);
+	}
+
+	public void setGameOverViewVisible(bool visible) {
+		gameOverView.SetActive(visible);
 	}
 	
 }

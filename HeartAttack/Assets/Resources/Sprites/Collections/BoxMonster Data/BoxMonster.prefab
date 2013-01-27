@@ -1,0 +1,961 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: BoxMonster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: BoxMonster0001
+    boundsData:
+    - {x: -.00468750298, y: -.015625, z: 0}
+    - {x: .415625006, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.212500006, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.212500006, y: .168750003, z: 0}
+    - {x: .203125, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .364258796}
+    - {x: .263669908, y: .364258796}
+    - {x: .00390820298, y: .479491204}
+    - {x: .263669908, y: .479491204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: eb89ff263ad5b472cb6178ceef152b92
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0002
+    boundsData:
+    - {x: -.00937499851, y: -.0140625015, z: 0}
+    - {x: .425000012, y: .371874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.221874997, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.221874997, y: .171875, z: 0}
+    - {x: .203125, y: .171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .244141608}
+    - {x: .269529283, y: .244141608}
+    - {x: .00390820298, y: .360350579}
+    - {x: .269529283, y: .360350579}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: cde6fd95e268a490dabf49e71f2a9c0c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0003
+    boundsData:
+    - {x: -.0109375045, y: -.012500003, z: 0}
+    - {x: .428125024, y: .375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.225000009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.225000009, y: .174999997, z: 0}
+    - {x: .203125, y: .174999997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .558595717, y: .00195410149}
+    - {x: .826169908, y: .00195410149}
+    - {x: .558595717, y: .119139649}
+    - {x: .826169908, y: .119139649}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3aea1079771ee49629211dcda47ba7f7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0004
+    boundsData:
+    - {x: -.012500003, y: -.010937497, z: 0}
+    - {x: .431250006, y: .378125012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.228125006, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.228125006, y: .178125009, z: 0}
+    - {x: .203125, y: .178125009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .00195410149}
+    - {x: .273435533, y: .00195410149}
+    - {x: .00390820298, y: .120116211}
+    - {x: .273435533, y: .120116211}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2075d6c259aa4f5fa1c9c371a31f7ed
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0005
+    boundsData:
+    - {x: -.0109375045, y: -.0140625015, z: 0}
+    - {x: .428125024, y: .371874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.225000009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.225000009, y: .171875, z: 0}
+    - {x: .203125, y: .171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .124024414}
+    - {x: .271482408, y: .124024414}
+    - {x: .00390820298, y: .240233392}
+    - {x: .271482408, y: .240233392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: ef65e94393a834dff8fb04c1387e3313
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0006
+    boundsData:
+    - {x: -.0078125, y: -.015625, z: 0}
+    - {x: .421875, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.21875, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.21875, y: .168750003, z: 0}
+    - {x: .203125, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .550783217, y: .244141608}
+    - {x: .814451158, y: .244141608}
+    - {x: .550783217, y: .359374017}
+    - {x: .814451158, y: .359374017}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3b7c79102780f4f62b93194de8caba1f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0007
+    boundsData:
+    - {x: -.00312500447, y: -.015625, z: 0}
+    - {x: .412500024, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.209375009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.209375009, y: .168750003, z: 0}
+    - {x: .203125, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .271486342, y: .364258796}
+    - {x: .529294908, y: .364258796}
+    - {x: .271486342, y: .479491204}
+    - {x: .529294908, y: .479491204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 01994f6f428b944d79fce6b09ba87ea5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0008
+    boundsData:
+    - {x: .00468749553, y: -.026562497, z: 0}
+    - {x: .396875024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .146875009, z: 0}
+    - {x: .203125, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .259767592, y: .717774391}
+    - {x: .507810533, y: .717774391}
+    - {x: .259767592, y: .826170921}
+    - {x: .507810533, y: .826170921}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: ac3a087898eeb42f2a764219e46596a5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0009
+    boundsData:
+    - {x: .00468749553, y: -.026562497, z: 0}
+    - {x: .396875024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .146875009, z: 0}
+    - {x: .203125, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .718750954}
+    - {x: .251951158, y: .718750954}
+    - {x: .00390820298, y: .827147484}
+    - {x: .251951158, y: .827147484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 12c4af2983b7b449dba0304a3df38513
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0010
+    boundsData:
+    - {x: .00468749553, y: -.026562497, z: 0}
+    - {x: .396875024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .146875009, z: 0}
+    - {x: .203125, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .259767592, y: .830079079}
+    - {x: .259767592, y: .954100609}
+    - {x: .476560533, y: .830079079}
+    - {x: .476560533, y: .954100609}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: b76ffe9169aea40b69f396208ff81a5c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0011
+    boundsData:
+    - {x: .00468749553, y: -.020312503, z: 0}
+    - {x: .396875024, y: .359375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .159374997, z: 0}
+    - {x: .203125, y: .159374997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .602540016}
+    - {x: .251951158, y: .602540016}
+    - {x: .00390820298, y: .714842796}
+    - {x: .251951158, y: .714842796}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: be8e654d9069c4a3a8d8153763f8728c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0012
+    boundsData:
+    - {x: -.00312500447, y: -.015625, z: 0}
+    - {x: .412500024, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.209375009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.209375009, y: .168750003, z: 0}
+    - {x: .203125, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .537111342, y: .482422858}
+    - {x: .794919908, y: .482422858}
+    - {x: .537111342, y: .597655296}
+    - {x: .794919908, y: .597655296}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 73ae0287eeaa74f5b8fa2590e811a756
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0013
+    boundsData:
+    - {x: -.00625000149, y: -.015625, z: 0}
+    - {x: .412500024, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.212500006, y: -.200000003, z: 0}
+    - {x: .200000003, y: -.200000003, z: 0}
+    - {x: -.212500006, y: .168750003, z: 0}
+    - {x: .200000003, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .483399421}
+    - {x: .261716783, y: .483399421}
+    - {x: .00390820298, y: .598631859}
+    - {x: .261716783, y: .598631859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: c2ea978ba94c24f9bbffcf3c83b5dfdf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0014
+    boundsData:
+    - {x: -.00937499851, y: -.0140625015, z: 0}
+    - {x: .425000012, y: .371874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.221874997, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.221874997, y: .171875, z: 0}
+    - {x: .203125, y: .171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .277345717, y: .244141608}
+    - {x: .542966783, y: .244141608}
+    - {x: .277345717, y: .360350579}
+    - {x: .542966783, y: .360350579}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2f1690bd1f58f473290162566323bf09
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0015
+    boundsData:
+    - {x: -.0109375045, y: -.012500003, z: 0}
+    - {x: .428125024, y: .375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.225000009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.225000009, y: .174999997, z: 0}
+    - {x: .203125, y: .174999997, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .558595717, y: .123047851}
+    - {x: .826169908, y: .123047851}
+    - {x: .558595717, y: .240233392}
+    - {x: .826169908, y: .240233392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: abf61f7de8f764dda89ca957fbb6c8f1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0016
+    boundsData:
+    - {x: -.012500003, y: -.010937497, z: 0}
+    - {x: .431250006, y: .378125012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.228125006, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.228125006, y: .178125009, z: 0}
+    - {x: .203125, y: .178125009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .281251967, y: .00195410149}
+    - {x: .550779283, y: .00195410149}
+    - {x: .281251967, y: .120116211}
+    - {x: .550779283, y: .120116211}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44761c919fa8b4492985997f241e449a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0017
+    boundsData:
+    - {x: -.0109375045, y: -.0140625015, z: 0}
+    - {x: .428125024, y: .371874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.225000009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.225000009, y: .171875, z: 0}
+    - {x: .203125, y: .171875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .279298842, y: .124024414}
+    - {x: .546873033, y: .124024414}
+    - {x: .279298842, y: .240233392}
+    - {x: .546873033, y: .240233392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 80fc5fb220e02456c9c428a4a556275e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0018
+    boundsData:
+    - {x: -.0078125, y: -.015625, z: 0}
+    - {x: .421875, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.21875, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.21875, y: .168750003, z: 0}
+    - {x: .203125, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .550783217, y: .363282233}
+    - {x: .814451158, y: .363282233}
+    - {x: .550783217, y: .478514642}
+    - {x: .814451158, y: .478514642}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: e94cc26f812ea45d2a171440fc198c9b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0019
+    boundsData:
+    - {x: -.00312500447, y: -.015625, z: 0}
+    - {x: .412500024, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.209375009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.209375009, y: .168750003, z: 0}
+    - {x: .203125, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .269533217, y: .483399421}
+    - {x: .527341783, y: .483399421}
+    - {x: .269533217, y: .598631859}
+    - {x: .527341783, y: .598631859}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: ac36999e7907b49b8b9458d1707757e2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0020
+    boundsData:
+    - {x: .00468749553, y: -.026562497, z: 0}
+    - {x: .396875024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .146875009, z: 0}
+    - {x: .203125, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .831055641}
+    - {x: .251951158, y: .831055641}
+    - {x: .00390820298, y: .939452171}
+    - {x: .251951158, y: .939452171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 47b036dad30e5481994298031b39cb4d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0021
+    boundsData:
+    - {x: .00468749553, y: -.026562497, z: 0}
+    - {x: .396875024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .146875009, z: 0}
+    - {x: .203125, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .484376967, y: .830079079}
+    - {x: .484376967, y: .954100609}
+    - {x: .701169908, y: .830079079}
+    - {x: .701169908, y: .954100609}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: b2c39a93c0d974115928c36ea52fa5e0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0022
+    boundsData:
+    - {x: .00468749553, y: -.026562497, z: 0}
+    - {x: .396875024, y: .346875012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .146875009, z: 0}
+    - {x: .203125, y: .146875009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .708986342, y: .720704079}
+    - {x: .957029283, y: .720704079}
+    - {x: .708986342, y: .829100609}
+    - {x: .957029283, y: .829100609}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0321154fef2b949d18a2b15e802e03d2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0023
+    boundsData:
+    - {x: .00468749553, y: -.0218750015, z: 0}
+    - {x: .396875024, y: .356249988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.193750009, y: -.200000003, z: 0}
+    - {x: .203125, y: -.200000003, z: 0}
+    - {x: -.193750009, y: .15625, z: 0}
+    - {x: .203125, y: .15625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .259767592, y: .602540016}
+    - {x: .507810533, y: .602540016}
+    - {x: .259767592, y: .713866234}
+    - {x: .507810533, y: .713866234}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: 90aa62e69367f4671a5f41cb09c3d039
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BoxMonster0024
+    boundsData:
+    - {x: -.00468750298, y: -.015625, z: 0}
+    - {x: .409375012, y: .368750006, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.209375009, y: -.200000003, z: 0}
+    - {x: .200000003, y: -.200000003, z: 0}
+    - {x: -.209375009, y: .168750003, z: 0}
+    - {x: .200000003, y: .168750003, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .535158217, y: .601563454}
+    - {x: .791013658, y: .601563454}
+    - {x: .535158217, y: .716795921}
+    - {x: .791013658, y: .716795921}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+    materialId: 0
+    sourceTextureGUID: aaddba1dbfd574a228ba7323e21c9915
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: b5858e13f5ffb4c7c94aac67ec86ed66, type: 2}
+  textures:
+  - {fileID: 2800000, guid: e57d8d9cb574e47f594ccee84d9276c7, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: da2ac421f3fcb4198a68ff6d219fd677
+  spriteCollectionName: BoxMonster
+  assetName: 
+  invOrthoSize: 1
+  halfTargetHeight: 320
+  buildKey: 89543651
+  dataGuid: 5eec893af4cad4ba4a12454204ddee53
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
