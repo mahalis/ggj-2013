@@ -33,6 +33,9 @@ MonoBehaviour:
   - assetGUID: c4e0ac291135b408697fdf2bb36c3c80
     dataGUID: 
     managed: 0
+  - assetGUID: 5d7663751d0e140d989900420010cdee
+    dataGUID: 
+    managed: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -63,10 +66,16 @@ MonoBehaviour:
     spriteCollectionDataGUID: 510ee7ef4d39946a7a1f6ae9d33f68df
     spriteNames:
     - white-pixel
+    - Replay1
+    - Start-thing1
     spriteTextureGUIDs:
     - 8f4494a81dd3345f28c6202e75e05249
+    - 34e17af1bae37437fb78f9d517f18e43
+    - dc6d8b05d7ddb4ab989a9a12b0a51750
     spriteTextureTimeStamps:
     - 1359156384
+    - 1359227242
+    - 1359227195
     managedSpriteCollection: 0
     version: 3
   - name: Frankenstein
@@ -196,39 +205,39 @@ MonoBehaviour:
     - 8cad1cd3c89d74d7ba66b6bbab9276c4
     spriteTextureTimeStamps:
     - 1359238158
-    - 1359238158
-    - 1359238158
-    - 1359238158
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238160
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238162
-    - 1359238164
-    - 1359238164
-    - 1359238164
-    - 1359238164
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254442
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254444
+    - 1359254446
+    - 1359254446
+    - 1359254446
+    - 1359254446
+    - 1359254446
+    - 1359254446
     - 1359238116
     - 1359238116
     - 1359238116
@@ -430,27 +439,27 @@ MonoBehaviour:
     - c100efcd5f7654f08b8bbf079c39cafe
     - 541d75922b2f34ae3b2a9cb08a56f0b4
     spriteTextureTimeStamps:
-    - 1359240874
-    - 1359240874
-    - 1359240874
-    - 1359240874
-    - 1359240874
-    - 1359240874
-    - 1359240874
-    - 1359240874
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
-    - 1359240876
+    - 1359255592
+    - 1359255592
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255594
+    - 1359255596
+    - 1359255596
+    - 1359255596
+    - 1359255596
+    - 1359255596
+    - 1359255596
     - 1359240876
     - 1359240876
     - 1359240876
@@ -617,5 +626,109 @@ MonoBehaviour:
     - 1359252176
     - 1359252176
     - 1359252178
+    managedSpriteCollection: 0
+    version: 3
+  - name: FrankenWoman
+    spriteCollectionGUID: d02e86c16a6d948b9b062a314e84b361
+    spriteCollectionDataGUID: 261f2340df3934537abf3c536c4fcb51
+    spriteNames:
+    - Frankenwoman0001
+    - Frankenwoman0002
+    - Frankenwoman0003
+    - Frankenwoman0004
+    - Frankenwoman0005
+    - Frankenwoman0006
+    - Frankenwoman0007
+    - Frankenwoman0008
+    - Frankenwoman0009
+    - Frankenwoman0010
+    - Frankenwoman0011
+    - Frankenwoman0012
+    - Frankenwoman0013
+    - Frankenwoman0014
+    - Frankenwoman0015
+    - Frankenwoman0016
+    - Frankenwoman0017
+    - Frankenwoman0018
+    - Frankenwoman0019
+    - Frankenwoman0020
+    - Frankenwoman0021
+    - Frankenwoman0022
+    - Frankenwoman0023
+    - Frankenwoman0024
+    - Frankenwoman0025
+    - Frankenwoman0026
+    - Frankenwoman0027
+    - Frankenwoman0028
+    - Frankenwoman0029
+    - Frankenwoman0030
+    - Frankenwoman0031
+    - Frankenwoman0032
+    spriteTextureGUIDs:
+    - 2f032af645f7d4c31b44096c73f519b5
+    - 83c4401ec7e7b47389617231bb2150bb
+    - 2cd556ccec8e945079294863ef94386f
+    - d5277114bfae04d3a8c074bd636e01ac
+    - cc360a49c16184723a2b90821697e16c
+    - 01c5ba45cc07240fc86f20002d6b3331
+    - 43642a00e1fec4205ab4625e0f2b9419
+    - c1e9fb3bfd94543efb798b530ed9ec99
+    - 1077903a7c7c14bd380dfa7a9e77bc91
+    - 236cbe86f803d487db03c31456005a28
+    - 70e856c2b03564df58ceab3acc340c69
+    - d8a029fabe4214502a8d9d1429c9de11
+    - 189ce88c8c8e0432f8874326f03e23bb
+    - 5c055a15fc6af4124b5b1dd0fa78cfd6
+    - 902bf5f91e9c94b659341e72b02d9173
+    - 8fe9380a9707a4b54b90dc7245e37034
+    - c841651290c2645aba7bcb827c2564d8
+    - 1ec9df09e4a0449d8aaf477a178e7303
+    - 861923a4bf9c549ec9a87ce7f4cf4cd2
+    - 3c7315c54a8dd4957a47e37c619bfe21
+    - 619036a10dfa04c5ba477689abf9048e
+    - ec735cabf891045c2951dacf1a6db1ae
+    - d856758cd18f9479b876d26f78ae58d7
+    - bf881f2e788c243e9a7ca12c40abe34b
+    - 78efc0434def846f381969b3e0399384
+    - 1451f80744eb14cadabffec75d79ee54
+    - 2c8df38be740b4ac9b98448092a0ae8d
+    - a40a2980806884e5b87aacaf036b2406
+    - 0e4766319b394408b9a1c900c2abd951
+    - 931a1434ccebe4c95b631f1fd701ed84
+    - 97fd195ef5f974feab793db636bb4bf0
+    - 7563c3c291a044323aece29380921564
+    spriteTextureTimeStamps:
+    - 1359250544
+    - 1359250544
+    - 1359250544
+    - 1359250544
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359250546
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253050
+    - 1359253052
+    - 1359253052
+    - 1359253052
+    - 1359253052
     managedSpriteCollection: 0
     version: 3

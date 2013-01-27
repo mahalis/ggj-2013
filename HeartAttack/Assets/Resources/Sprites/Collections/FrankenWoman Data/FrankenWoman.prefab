@@ -1,0 +1,1257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: FrankenWoman
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Frankenwoman0001
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .00195410149}
+    - {x: .188475579, y: .00195410149}
+    - {x: .00195410149, y: .115233399}
+    - {x: .188475579, y: .115233399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2f032af645f7d4c31b44096c73f519b5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0002
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .192383796, y: .00195410149}
+    - {x: .378905267, y: .00195410149}
+    - {x: .192383796, y: .115233399}
+    - {x: .378905267, y: .115233399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 83c4401ec7e7b47389617231bb2150bb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0003
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .382813483, y: .00195410149}
+    - {x: .569334984, y: .00195410149}
+    - {x: .382813483, y: .115233399}
+    - {x: .569334984, y: .115233399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2cd556ccec8e945079294863ef94386f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0004
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .573243141, y: .00195410149}
+    - {x: .759764671, y: .00195410149}
+    - {x: .573243141, y: .115233399}
+    - {x: .759764671, y: .115233399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: d5277114bfae04d3a8c074bd636e01ac
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0005
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .763672829, y: .00195410149}
+    - {x: .950194359, y: .00195410149}
+    - {x: .763672829, y: .115233399}
+    - {x: .950194359, y: .115233399}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: cc360a49c16184723a2b90821697e16c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0006
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .119141601}
+    - {x: .00195410149, y: .305663079}
+    - {x: .115233399, y: .119141601}
+    - {x: .115233399, y: .305663079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 01c5ba45cc07240fc86f20002d6b3331
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0007
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .309571296}
+    - {x: .00195410149, y: .496092767}
+    - {x: .115233399, y: .309571296}
+    - {x: .115233399, y: .496092767}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 43642a00e1fec4205ab4625e0f2b9419
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0008
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .500000954}
+    - {x: .00195410149, y: .686522484}
+    - {x: .115233399, y: .500000954}
+    - {x: .115233399, y: .686522484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: c1e9fb3bfd94543efb798b530ed9ec99
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0009
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .690430641}
+    - {x: .00195410149, y: .876952171}
+    - {x: .115233399, y: .690430641}
+    - {x: .115233399, y: .876952171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1077903a7c7c14bd380dfa7a9e77bc91
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0010
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .880860329}
+    - {x: .188475579, y: .880860329}
+    - {x: .00195410149, y: .994139671}
+    - {x: .188475579, y: .994139671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 236cbe86f803d487db03c31456005a28
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0011
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .119141601, y: .119141601}
+    - {x: .119141601, y: .305663079}
+    - {x: .232420892, y: .119141601}
+    - {x: .232420892, y: .305663079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 70e856c2b03564df58ceab3acc340c69
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0012
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .119141601, y: .309571296}
+    - {x: .119141601, y: .496092767}
+    - {x: .232420892, y: .309571296}
+    - {x: .232420892, y: .496092767}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: d8a029fabe4214502a8d9d1429c9de11
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0013
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .119141601, y: .500000954}
+    - {x: .119141601, y: .686522484}
+    - {x: .232420892, y: .500000954}
+    - {x: .232420892, y: .686522484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 189ce88c8c8e0432f8874326f03e23bb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0014
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .119141601, y: .690430641}
+    - {x: .119141601, y: .876952171}
+    - {x: .232420892, y: .690430641}
+    - {x: .232420892, y: .876952171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5c055a15fc6af4124b5b1dd0fa78cfd6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0015
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .192383796, y: .880860329}
+    - {x: .378905267, y: .880860329}
+    - {x: .192383796, y: .994139671}
+    - {x: .378905267, y: .994139671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 902bf5f91e9c94b659341e72b02d9173
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0016
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .382813483, y: .119141601}
+    - {x: .569334984, y: .119141601}
+    - {x: .382813483, y: .232420892}
+    - {x: .569334984, y: .232420892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8fe9380a9707a4b54b90dc7245e37034
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0017
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .236329108, y: .119141601}
+    - {x: .236329108, y: .305663079}
+    - {x: .349608392, y: .119141601}
+    - {x: .349608392, y: .305663079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: c841651290c2645aba7bcb827c2564d8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0018
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .573243141, y: .119141601}
+    - {x: .759764671, y: .119141601}
+    - {x: .573243141, y: .232420892}
+    - {x: .759764671, y: .232420892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1ec9df09e4a0449d8aaf477a178e7303
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0019
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .763672829, y: .119141601}
+    - {x: .950194359, y: .119141601}
+    - {x: .763672829, y: .232420892}
+    - {x: .950194359, y: .232420892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 861923a4bf9c549ec9a87ce7f4cf4cd2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0020
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .353516608, y: .236329108}
+    - {x: .353516608, y: .422850579}
+    - {x: .466795892, y: .236329108}
+    - {x: .466795892, y: .422850579}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3c7315c54a8dd4957a47e37c619bfe21
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0021
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .236329108, y: .309571296}
+    - {x: .236329108, y: .496092767}
+    - {x: .349608392, y: .309571296}
+    - {x: .349608392, y: .496092767}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 619036a10dfa04c5ba477689abf9048e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0022
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .236329108, y: .500000954}
+    - {x: .236329108, y: .686522484}
+    - {x: .349608392, y: .500000954}
+    - {x: .349608392, y: .686522484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: ec735cabf891045c2951dacf1a6db1ae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0023
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .236329108, y: .690430641}
+    - {x: .236329108, y: .876952171}
+    - {x: .349608392, y: .690430641}
+    - {x: .349608392, y: .876952171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: d856758cd18f9479b876d26f78ae58d7
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0024
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .353516608, y: .426758796}
+    - {x: .353516608, y: .613280296}
+    - {x: .466795892, y: .426758796}
+    - {x: .466795892, y: .613280296}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: bf881f2e788c243e9a7ca12c40abe34b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0025
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .353516608, y: .617188454}
+    - {x: .353516608, y: .803709984}
+    - {x: .466795892, y: .617188454}
+    - {x: .466795892, y: .803709984}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 78efc0434def846f381969b3e0399384
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0026
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .382813483, y: .807618141}
+    - {x: .382813483, y: .994139671}
+    - {x: .496092767, y: .807618141}
+    - {x: .496092767, y: .994139671}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1451f80744eb14cadabffec75d79ee54
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0027
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .470704108, y: .236329108}
+    - {x: .657225609, y: .236329108}
+    - {x: .470704108, y: .349608392}
+    - {x: .657225609, y: .349608392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2c8df38be740b4ac9b98448092a0ae8d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0028
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .470704108, y: .353516608}
+    - {x: .470704108, y: .540038109}
+    - {x: .583983421, y: .353516608}
+    - {x: .583983421, y: .540038109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: a40a2980806884e5b87aacaf036b2406
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0029
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .470704108, y: .543946266}
+    - {x: .470704108, y: .730467796}
+    - {x: .583983421, y: .543946266}
+    - {x: .583983421, y: .730467796}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0e4766319b394408b9a1c900c2abd951
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0030
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .500000954, y: .734375954}
+    - {x: .500000954, y: .920897484}
+    - {x: .613280296, y: .734375954}
+    - {x: .613280296, y: .920897484}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 931a1434ccebe4c95b631f1fd701ed84
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0031
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .587891579, y: .353516608}
+    - {x: .587891579, y: .540038109}
+    - {x: .701170921, y: .353516608}
+    - {x: .701170921, y: .540038109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 97fd195ef5f974feab793db636bb4bf0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: Frankenwoman0032
+    boundsData:
+    - {x: .014062494, y: -.018749997, z: 0}
+    - {x: .596875012, y: .362500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .800000012, y: .400000006, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.200000003, z: 0}
+    - {x: .3125, y: -.200000003, z: 0}
+    - {x: -.284375012, y: .162500009, z: 0}
+    - {x: .3125, y: .162500009, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .661133766, y: .236329108}
+    - {x: .847655296, y: .236329108}
+    - {x: .661133766, y: .349608392}
+    - {x: .847655296, y: .349608392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7563c3c291a044323aece29380921564
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 74d3c8a0e023442329b3f62084d2dd18, type: 2}
+  textures:
+  - {fileID: 2800000, guid: a063305ca8e5b4aec96a6cc9f3425fb7, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: d02e86c16a6d948b9b062a314e84b361
+  spriteCollectionName: FrankenWoman
+  assetName: 
+  invOrthoSize: 1
+  halfTargetHeight: 320
+  buildKey: 2000998332
+  dataGuid: 261f2340df3934537abf3c536c4fcb51
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
