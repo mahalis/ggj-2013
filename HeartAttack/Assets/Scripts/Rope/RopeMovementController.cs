@@ -46,6 +46,7 @@ public class RopeMovementController : MonoBehaviour {
 			        isConnected = false;
 			        if (activeNodeConnection != null){
 			        	activeNodeConnection.disconnectRope();
+			        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
 			        }
 			        activeNodeConnection = null;
 			    }
@@ -73,11 +74,11 @@ public class RopeMovementController : MonoBehaviour {
 			List<NodeConnection> connections = GameManager.getInstance().nodeConnections;
 			foreach (NodeConnection nc in connections) {
 				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
-				if (dist < 1f) {
+				if (dist < 1f && !nc.isConnected) {
 					isConnected = true;
 					nc.connectWithRope(this);
 					activeNodeConnection = nc;
-					GameManager.getInstance().nodeWasConnected();
+					EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
 					break;
 				}
 			}
