@@ -6,16 +6,6 @@ public class ActionCardManager : MonoBehaviour {
 	public List<GameObject> availableActionCards;
 	List<ActionCard> activeActionCards;
 
-	float targetTransitionY = 0f;
-	float startTransitionY = 0;
-	float transitionTime = 0f;
-	bool isTransitioning = false;
-
-	float targetTransitionX = 0f;
-	float startTransitionX = 0;
-	float transitionCompletedTime = 0f;
-	bool isTransitioningCompleted = false;
-
 	float ACTION_CARD_SIZE = 3f;
 	
 	private static ActionCardManager instance;
@@ -37,19 +27,19 @@ public class ActionCardManager : MonoBehaviour {
 	}	
 
 	void Update() {
-		if (isTransitioning) {
-			transitionActiveCards();
-		}
-
-		if (isTransitioningCompleted) {
-			transitionCompletedActionCardOut();
-		}
+		
 	}
 
 	public void addActiveActionCard(ActionCard newActionCard) {
 		activeActionCards.Add(newActionCard);
 	}
-
+	
+	protected void layoutCards () {
+		for (int i = 0; i < activeActionCards.Count; i++) {
+			activeActionCards[i].targetPosition = new Vector2(0, -ACTION_CARD_SIZE * (i + 0.5f));
+		}
+	}
+	
 	public void generateNewAction(int numColors) {
 		// randomly pick from prefabs
 		int randomNum = Random.Range(0,availableActionCards.Count);
@@ -60,10 +50,9 @@ public class ActionCardManager : MonoBehaviour {
 		
 		newActionCard.portColors = buildPortColorListOfLength(Mathf.Min(numColors, GameConfig.NUMBER_OF_PORT_COLORS), activeActionCards.Count);
 
-		newActionCard.transform.localPosition = new Vector3(0,ACTION_CARD_SIZE * activeActionCards.Count,0);
-
-		activeActionCards.Add(newActionCard);
-		pushActiveCardsOnScreen();
+		newActionCard.transform.localPosition = Vector3.zero;
+		activeActionCards.Insert(0, newActionCard);
+		layoutCards();
 	}
 
 	List<PortColor> buildPortColorListOfLength(int numColors,int targetIndex) {
@@ -108,31 +97,11 @@ public class ActionCardManager : MonoBehaviour {
 		return portColors;
 	}
 
-	void pushActiveCardsOnScreen() {
-		startTransitionY = this.gameObject.transform.localPosition.y;
-		targetTransitionY = ((activeActionCards.Count * ACTION_CARD_SIZE) - (ACTION_CARD_SIZE/2f)) * -1; // subtract half a card for proper alignment
-		isTransitioning = true;
-		transitionTime = 0f;
-	}
-
-	void transitionActiveCards () {
-		if (transitionTime > 1f){
-			isTransitioning = false;
-		}
-		float dY = targetTransitionY - startTransitionY;
-		
-		this.gameObject.transform.localPosition = new Vector3(
-			this.gameObject.transform.localPosition.x,
-			startTransitionY + dY * (-0.5f * Mathf.Cos(transitionTime * Mathf.PI) + 0.5f),
-			this.gameObject.transform.localPosition.z
-		);
-		transitionTime += Time.deltaTime / 0.5f;
-	}
-
 
 	public void checkForActionCompletion(List<PortColor> connectedPortColors) {
-		if (activeActionCards.Count >0) {
-			ActionCard activeActionCard = activeActionCards[0];
+		List<ActionCard> cardsToRemove = new List<ActionCard>();
+		for (int i = 0; i < activeActionCards.Count; i++) {
+			ActionCard activeActionCard = activeActionCards[i];
 			int requiredConnections = activeActionCard.portColors.Count;
 			if (connectedPortColors.Count == requiredConnections){
 				int correctConnections = 0;
@@ -142,66 +111,28 @@ public class ActionCardManager : MonoBehaviour {
 					}
 				}
 				if (correctConnections == requiredConnections) {
-					activeActionCardHasBeenCompleted();
+					cardsToRemove.Add(activeActionCard);
 					GameManager.getInstance().completedActionCardWithNumberOfColors(activeActionCard.portColors.Count);
 				}
 			}
-		}		
+		}
+		
+		foreach(ActionCard card in cardsToRemove) {
+			activeActionCardHasBeenCompleted(card);
+		}
+		layoutCards();
 	}
 
 	public int  numberOfActiveCards () {
 		return activeActionCards.Count;
 	}
 
-	void activeActionCardHasBeenCompleted() {
-		ActionCard completedCard = activeActionCards[0];
-		startTransitionX = completedCard.transform.localPosition.x;
-		targetTransitionX = startTransitionX + ACTION_CARD_SIZE;
-
-		transitionCompletedTime = 0f;
-		isTransitioningCompleted = true;
-	}
-
-	void transitionCompletedActionCardOut () {
-		if (transitionCompletedTime > 1f){
-			isTransitioningCompleted = false;
-			Destroy(activeActionCards[0].gameObject);
-			activeActionCards.RemoveAt(0);
-			StartCoroutine(reorderActiveCards());
-		} else {
-			ActionCard completedCard = activeActionCards[0];
-			float dX = targetTransitionX - startTransitionX;
-			completedCard.transform.localPosition = new Vector3(
-				startTransitionX + dX * (-0.5f * Mathf.Cos(transitionCompletedTime * Mathf.PI * 0.5f) + 0.5f), // only go to half pi because we don’t need deceleration at the end
-				completedCard.transform.localPosition.y,			
-				completedCard.transform.localPosition.z
-			);
-			Color color = completedCard.cardSprite.color;
-			color.a = 1.0f - Mathf.Pow (transitionCompletedTime, 2);
-			completedCard.cardSprite.color = color;
-			transitionCompletedTime += Time.deltaTime / 0.25f;
-		}
-	}
-
-	IEnumerator reorderActiveCards () {
-		while(isTransitioning) {
-			yield return null;
-		}
-
-		this.gameObject.transform.localPosition = new Vector3(
-			this.gameObject.transform.localPosition.x,
-			(((activeActionCards.Count * ACTION_CARD_SIZE) - (ACTION_CARD_SIZE/2f)) * -1),
-			this.gameObject.transform.localPosition.z
-		);
-
-		for (int i = 0; i < activeActionCards.Count; i ++){
-			activeActionCards[i].transform.localPosition = new Vector3(0,ACTION_CARD_SIZE * i,0);
-		}
+	void activeActionCardHasBeenCompleted(ActionCard card) {
+		card.targetPosition = card.targetPosition + new Vector2(2*ACTION_CARD_SIZE, 0);
+		activeActionCards.Remove(card);
 	}
 
 	public void reset() {
-		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f -0.5f,ACTION_CARD_SIZE/2f,0);
-
 		foreach(ActionCard ac in activeActionCards){
 			Destroy(ac.gameObject);
 		}

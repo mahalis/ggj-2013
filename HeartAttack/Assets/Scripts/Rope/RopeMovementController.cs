@@ -11,6 +11,7 @@ public class RopeMovementController : MonoBehaviour,IEventListener {
 	Quaternion preConnectionRotation;
 
 	Vector2 grabPosition;
+	float grabStartingTime;
 
 	int TIP_LAYER = 8;
 	int layerMask = 1 << 8;
@@ -63,6 +64,7 @@ public class RopeMovementController : MonoBehaviour,IEventListener {
 		    if (Physics.Raycast(ray.origin,ray.direction,out hit,Mathf.Infinity,layerMask)){
 		        if (hit.transform == this.transform){
 		        	grabPosition = Input.mousePosition;
+					grabStartingTime = Time.time;
 			        isFollowingMouse = true;
 			        disconnect();
 			        rigidbody.isKinematic = true;
@@ -87,7 +89,7 @@ public class RopeMovementController : MonoBehaviour,IEventListener {
 	}
 
 	void checkForAttachment() {
-		if (Vector2.Distance(grabPosition, Input.mousePosition) > 100f){
+		if (Vector2.Distance(grabPosition, Input.mousePosition) > 100f || Time.time > grabStartingTime + 0.5f){
 			List<NodeConnection> connections = GameManager.getInstance().nodeConnections;
 			foreach (NodeConnection nc in connections) {
 				float dist = Vector2.Distance(this.transform.position, nc.transform.position);

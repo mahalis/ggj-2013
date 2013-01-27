@@ -17,6 +17,12 @@ public class ActionCard : MonoBehaviour {
 	public List<PortColor> portColors;
 	public tk2dSprite cardSprite;
 	public GameObject portColorPrefab;
+	
+	public Vector2 targetPosition;
+	public Vector2 velocity;
+	
+	const float springK = 70f;
+	const float drag = 5f;
 
 	public bool isScientist = false;
 
@@ -27,21 +33,17 @@ public class ActionCard : MonoBehaviour {
 			EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
 		}
 	}
-
-	void playStartingSoundEffect() {
-		switch(startingSoundEffect) {
-			case StartingSoundEffect.Electricity :
-				SoundManager.getInstance().playSoundEffect("electricity");
-			break;
-			case StartingSoundEffect.Hiss :
-				SoundManager.getInstance().playSoundEffect("hiss");
-			break;
-			case StartingSoundEffect.Robot :
-				SoundManager.getInstance().playSoundEffect("robot");
-			break;
+	
+	void Update () {
+		Vector2 position = new Vector2(transform.localPosition.x, transform.localPosition.y);
+		position += velocity * Time.deltaTime;
+		transform.localPosition = position;
+		velocity += (targetPosition - new Vector2(position.x, position.y)) * springK * Time.deltaTime;
+		velocity *= (1 - drag * Time.deltaTime);
+		if (position.x > 5) {
+			Destroy(this.gameObject);
 		}
 	}
-
 
 	void buildPortColorBar ()  {
 		if (portColorPrefab) {
