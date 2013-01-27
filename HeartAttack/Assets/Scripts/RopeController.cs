@@ -31,7 +31,7 @@ public class RopeController : MonoBehaviour {
 			if (i < numSegments-1){
 				newSegment = (GameObject)Instantiate(segment, position, startRotation);
 			} else {
-				newSegment = (GameObject)Instantiate(finalSegment, position, startRotation);
+				newSegment = (GameObject)Instantiate(Resources.Load("Prefabs/TubeJointEnd") as GameObject, position, startRotation);
 			}
 			newSegment.transform.parent = this.transform.parent;
 			
