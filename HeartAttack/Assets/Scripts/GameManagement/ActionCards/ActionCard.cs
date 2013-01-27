@@ -9,11 +9,27 @@ public class ActionCard : MonoBehaviour {
 	public List<PortColor> portColors;
 	public tk2dSprite cardSprite;
 	public GameObject portColorPrefab;
+	
+	public Vector2 targetPosition;
+	public Vector2 velocity;
+	
+	const float springK = 70f;
+	const float drag = 5f;
 
 	void Start () {
 		buildPortColorBar();
 	}
-
+	
+	void Update () {
+		Vector2 position = new Vector2(transform.localPosition.x, transform.localPosition.y);
+		position += velocity * Time.deltaTime;
+		transform.localPosition = position;
+		velocity += (targetPosition - new Vector2(position.x, position.y)) * springK * Time.deltaTime;
+		velocity *= (1 - drag * Time.deltaTime);
+		if (position.x > 5) {
+			Destroy(this.gameObject);
+		}
+	}
 
 	void buildPortColorBar ()  {
 		if (portColorPrefab) {
