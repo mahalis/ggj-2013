@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 	}
 	
 	void newCard() {
-		int numColors = Mathf.RoundToInt(4 * Mathf.Pow(Mathf.Min(currentHeartRate - BASE_HEART_RATE, 60) / 60.0f, 0.3f));
+		int numColors = Mathf.Min(Mathf.RoundToInt(5 * Mathf.Pow(Mathf.Min(currentHeartRate - BASE_HEART_RATE, 60) / 60.0f, 0.3f)), 4);
 		if (Random.Range(0.0f, 1.0f) < EASY_CHANCE) {
 			//Debug.Log ("Easy, subtracting 1");
 			numColors -= 1;

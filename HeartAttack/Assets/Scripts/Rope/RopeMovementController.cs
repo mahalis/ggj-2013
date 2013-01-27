@@ -92,7 +92,9 @@ public class RopeMovementController : MonoBehaviour,IEventListener {
 		if (Vector2.Distance(grabPosition, Input.mousePosition) > 100f || Time.time > grabStartingTime + 0.5f){
 			List<NodeConnection> connections = GameManager.getInstance().nodeConnections;
 			foreach (NodeConnection nc in connections) {
-				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
+				Vector2 thisPosition = this.transform.position;
+				Vector2 nodePosition = nc.transform.position;
+				float dist = Vector2.Distance(thisPosition, nodePosition);
 				if (dist < 1.5f && !nc.isConnected) {
 					SoundManager.getInstance().playSoundEffect("Blood");
 					preConnectionRotation = this.transform.rotation;
