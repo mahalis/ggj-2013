@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour,IEventListener {
 	const float EASY_CHANCE = 0.2f; // remove 1 color from next card
 	const float SUPER_EASY_CHANCE = 0.05f; // remove 2 colors from next card
 	// note that total likelihood of getting at least one color removed is the sum of the above, in this case 15%
+
+	bool gameIsActive = false;
 	
 	private static GameManager instance;
 	public static GameManager getInstance() {
@@ -36,11 +38,13 @@ public class GameManager : MonoBehaviour,IEventListener {
 	
 	// Update is called once per frame
 	void Update () {
-		float now = Time.time;
-		currentHeartRate += Time.deltaTime * HEART_RATE_GROWTH;
-		if(now > nextCardTime) {
-			newCard ();
-			nextCardTime = now + (BASE_CARD_INTERVAL - (currentHeartRate - BASE_HEART_RATE) * HEART_RATE_TIME_LOSS) + Random.Range(-RANDOM_TIME_ADJUSTMENT, RANDOM_TIME_ADJUSTMENT);
+		if(gameIsActive){
+			float now = Time.time;
+			currentHeartRate += Time.deltaTime * HEART_RATE_GROWTH;
+			if(now > nextCardTime) {
+				newCard ();
+				nextCardTime = now + (BASE_CARD_INTERVAL - (currentHeartRate - BASE_HEART_RATE) * HEART_RATE_TIME_LOSS) + Random.Range(-RANDOM_TIME_ADJUSTMENT, RANDOM_TIME_ADJUSTMENT);
+			}
 		}
 	}
 	
@@ -93,6 +97,11 @@ public class GameManager : MonoBehaviour,IEventListener {
 			}
 		}
 		ActionCardManager.getInstance().checkForActionCompletion(connectedColors);
+	}
+
+	public void startGame () {
+		gameIsActive = true;
+		viewManager.hideStartGameView();
 	}
 
 

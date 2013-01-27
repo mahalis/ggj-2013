@@ -54,11 +54,7 @@ MonoBehaviour:
     - {x: 1, y: -1, z: 0}
     - {x: -1, y: 1, z: 0}
     - {x: 1, y: 1, z: 0}
-    normals:
-    - {x: 0, y: 0, z: -1}
-    - {x: 0, y: 0, z: -1}
-    - {x: 0, y: 0, z: -1}
-    - {x: 0, y: 0, z: -1}
+    normals: []
     tangents: []
     uvs:
     - {x: .250124991, y: .250124991}
@@ -94,7 +90,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1155068923
+  buildKey: 1356768574
   dataGuid: 510ee7ef4d39946a7a1f6ae9d33f68df
   managedSpriteCollection: 0
   hasPlatformData: 0

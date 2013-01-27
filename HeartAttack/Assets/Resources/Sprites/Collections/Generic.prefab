@@ -119,7 +119,7 @@ MonoBehaviour:
   anisoLevel: 1
   physicsDepth: .100000001
   disableTrimming: 0
-  normalGenerationMode: 2
+  normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1
