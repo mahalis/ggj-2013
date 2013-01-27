@@ -31,6 +31,22 @@ ModelImporter:
     100050: Sphere004
     100052: Sphere005
     100054: Sphere006
+    100056: Connector005
+    100058: Connector006
+    100060: Connector007
+    100062: Connector008
+    100064: Connector009
+    100066: Connector010
+    100068: Connector011
+    100070: Connector012
+    100072: Connector013
+    100074: Connector014
+    100076: Connector015
+    100078: Connector016
+    100080: Cylinder015
+    100082: Cylinder016
+    100084: Cylinder017
+    100086: Cylinder018
     400000: Connector01
     400002: Connector02
     400004: Connector03
@@ -59,6 +75,22 @@ ModelImporter:
     400050: Sphere004
     400052: Sphere005
     400054: Sphere006
+    400056: Connector005
+    400058: Connector006
+    400060: Connector007
+    400062: Connector008
+    400064: Connector009
+    400066: Connector010
+    400068: Connector011
+    400070: Connector012
+    400072: Connector013
+    400074: Connector014
+    400076: Connector015
+    400078: Connector016
+    400080: Cylinder015
+    400082: Cylinder016
+    400084: Cylinder017
+    400086: Cylinder018
     2300000: Connector01
     2300002: Connector02
     2300004: Connector03
@@ -84,6 +116,22 @@ ModelImporter:
     2300044: Sphere004
     2300046: Sphere005
     2300048: Sphere006
+    2300050: Connector005
+    2300052: Connector006
+    2300054: Connector007
+    2300056: Connector008
+    2300058: Connector009
+    2300060: Connector010
+    2300062: Connector011
+    2300064: Connector012
+    2300066: Connector013
+    2300068: Connector014
+    2300070: Connector015
+    2300072: Connector016
+    2300074: Cylinder015
+    2300076: Cylinder016
+    2300078: Cylinder017
+    2300080: Cylinder018
     3300000: Connector01
     3300002: Connector02
     3300004: Connector03
@@ -109,6 +157,22 @@ ModelImporter:
     3300044: Sphere004
     3300046: Sphere005
     3300048: Sphere006
+    3300050: Connector005
+    3300052: Connector006
+    3300054: Connector007
+    3300056: Connector008
+    3300058: Connector009
+    3300060: Connector010
+    3300062: Connector011
+    3300064: Connector012
+    3300066: Connector013
+    3300068: Connector014
+    3300070: Connector015
+    3300072: Connector016
+    3300074: Cylinder015
+    3300076: Cylinder016
+    3300078: Cylinder017
+    3300080: Cylinder018
     4300000: Heart
     4300002: GearWindow
     4300004: Sphere003
@@ -134,6 +198,22 @@ ModelImporter:
     4300044: Cylinder012
     4300046: Cylinder013
     4300048: Cylinder014
+    4300050: Cylinder015
+    4300052: Cylinder016
+    4300054: Cylinder017
+    4300056: Cylinder018
+    4300058: Connector005
+    4300060: Connector006
+    4300062: Connector007
+    4300064: Connector008
+    4300066: Connector009
+    4300068: Connector010
+    4300070: Connector011
+    4300072: Connector012
+    4300074: Connector013
+    4300076: Connector014
+    4300078: Connector015
+    4300080: Connector016
     9500000: //RootNode
   materials:
     importMaterials: 1
