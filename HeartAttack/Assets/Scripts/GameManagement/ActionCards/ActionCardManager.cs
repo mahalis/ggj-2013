@@ -23,7 +23,7 @@ public class ActionCardManager : MonoBehaviour {
 		}
 
 		activeActionCards = new List<ActionCard>();
-		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f -0.5f,ACTION_CARD_SIZE/2f,0);
+		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f -1f,ACTION_CARD_SIZE/2f,0);
 	}	
 
 	void Update() {
@@ -92,6 +92,25 @@ public class ActionCardManager : MonoBehaviour {
 					}
 				}				
 			}
+
+			List<PortColor> activeConnections = GameManager.getInstance().getConnectedColors();
+				// first check for num diff
+			if (activeConnections.Count > 0 && activeConnections.Count == portColors.Count) {
+				bool isDiff = false;
+				foreach (PortColor pc in portColors){
+					if (!activeConnections.Contains(pc)){
+						isDiff = true;
+						break;
+					}
+				}
+				if (isDiff){
+					passedPreviousCompare = true;
+				} else {
+					passedPreviousCompare = false;
+				}
+			}
+
+
 		}while(!passedPreviousCompare);
 
 		return portColors;
