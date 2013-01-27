@@ -6,6 +6,8 @@ public class ViewManager : MonoBehaviour {
 	public GameObject upperRightAnchor;
 	public GameObject upperLeftAnchor;
 
+	public GameObject startGameView;
+
 	void Start() {
 		this.positionAnchors();
 	}
@@ -20,6 +22,10 @@ public class ViewManager : MonoBehaviour {
 		if (upperLeftAnchor) {
 			upperLeftAnchor.transform.localPosition = new Vector3(-Screen.width, Screen.height,0);
 		}
+	}
+
+	public void hideStartGameView() {
+		startGameView.SetActive(false);
 	}
 	
 }
