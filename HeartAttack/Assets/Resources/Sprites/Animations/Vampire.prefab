@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaffc43a5d2b1d47858e3fb687e7271, type: 3}
   m_Name: 
   clips:
-  - name: New Clip 0
+  - name: rawr
     frames:
     - spriteCollection: {fileID: 11400000, guid: b05610756abed45b7a7beba4fdf4a7c0,
         type: 2}
