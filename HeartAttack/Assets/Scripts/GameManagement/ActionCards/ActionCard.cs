@@ -9,6 +9,7 @@ public class ActionCard : MonoBehaviour {
 		None,
 		Electricity,
 		Robot,
+		Count,
 		Hiss,
 	}
 	public StartingSoundEffect startingSoundEffect = StartingSoundEffect.None;
@@ -45,6 +46,23 @@ public class ActionCard : MonoBehaviour {
 		}
 	}
 
+	void playStartingSoundEffect() {
+ 		switch(startingSoundEffect) {
+ 			case StartingSoundEffect.Electricity :
+ 				SoundManager.getInstance().playSoundEffect("electricity");
+ 			break;
+ 			case StartingSoundEffect.Hiss :
+ 				SoundManager.getInstance().playSoundEffect("hiss");
+ 			break;
+ 			case StartingSoundEffect.Robot :
+ 				SoundManager.getInstance().playSoundEffect("robot");
+ 			break;
+ 			case StartingSoundEffect.Count :
+ 				SoundManager.getInstance().playSoundEffect("count");
+ 			break;
+ 		}
+ 	}
+
 	void buildPortColorBar ()  {
 		if (portColorPrefab) {
 			float xOffset = ((portColors.Count-1) * BAR_WIDTH)/2f;	
@@ -63,3 +81,6 @@ public class ActionCard : MonoBehaviour {
 	}
 
 }
+
+
+
