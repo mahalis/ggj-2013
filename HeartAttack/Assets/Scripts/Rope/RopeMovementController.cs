@@ -50,7 +50,6 @@ public class RopeMovementController : MonoBehaviour {
 			        	activeNodeConnection.disconnectRope();
 			        	this.transform.rotation = preConnectionRotation;
 			        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
-						Instantiate(GameManager.getInstance().bloodSpurt,activeNodeConnection.transform.position, activeNodeConnection.transform.rotation);
 			        }
 			        activeNodeConnection = null;
 			    }

@@ -5,6 +5,12 @@ public class NodeConnection : MonoBehaviour {
 	public PortColor portColor;
 	public bool isConnected;
 	
+	protected ParticleSystem spurt;
+	
+	void Start() {
+		spurt = this.GetComponentInChildren<ParticleSystem>();
+	}
+	
 	public void connectWithRope(RopeMovementController rc) {
 		rc.stopDragging();
     	rc.rigidbody.MovePosition(this.transform.position);
@@ -13,6 +19,7 @@ public class NodeConnection : MonoBehaviour {
     	this.isConnected = true;
 	}
 	public void disconnectRope() {
+		spurt.Play();
 		this.isConnected = false;
 	}
 }
