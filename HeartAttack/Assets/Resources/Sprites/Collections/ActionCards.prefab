@@ -59,7 +59,7 @@ MonoBehaviour:
   atlasWidth: 512
   atlasHeight: 512
   forceSquareAtlas: 0
-  atlasWastage: 74.2126465
+  atlasWastage: 70.9442139
   allowMultipleAtlases: 0
   textureParams:
   - name: action-card-placeholder
@@ -99,6 +99,43 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
+  - name: ColourCapsule
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 8a1c380035cde4f2288cded346ed8b75, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 82
+    anchorY: 23
+    overrideMesh: {fileID: 0}
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 1
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
   spriteCollection: {fileID: 11400000, guid: 63a2373a08b354161991bea32c8192ac, type: 2}
   premultipliedAlpha: 0
   altMaterials:
@@ -107,7 +144,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 02034d394d7e44891997e9d45823adf2, type: 2}
   atlasTextures:
   - {fileID: 2800000, guid: d90b0390cc40c4496888769d7dea118c, type: 3}
-  useTk2dCamera: 1
+  useTk2dCamera: 0
   targetHeight: 640
   targetOrthoSize: 1
   globalScale: 1

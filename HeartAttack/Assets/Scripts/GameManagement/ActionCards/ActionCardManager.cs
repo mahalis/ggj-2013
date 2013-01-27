@@ -16,7 +16,7 @@ public class ActionCardManager : MonoBehaviour {
 	float transitionCompletedTime = 0f;
 	bool isTransitioningCompleted = false;
 
-	float ACTION_CARD_SIZE = 2f;
+	float ACTION_CARD_SIZE = 3f;
 	
 	private static ActionCardManager instance;
 	public static ActionCardManager getInstance() {
@@ -33,7 +33,7 @@ public class ActionCardManager : MonoBehaviour {
 		}
 
 		activeActionCards = new List<ActionCard>();
-		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f,ACTION_CARD_SIZE/2f,0);
+		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f -0.5f,ACTION_CARD_SIZE/2f,0);
 	}	
 
 	void Update() {

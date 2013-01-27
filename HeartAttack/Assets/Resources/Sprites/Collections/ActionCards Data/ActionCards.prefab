@@ -44,16 +44,16 @@ MonoBehaviour:
   - name: action-card-placeholder
     boundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 2.55999994, y: 2.55999994, z: 0}
+    - {x: .00800000038, y: .00800000038, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: 2.55999994, y: 2.55999994, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
+    - {x: .00800000038, y: .00800000038, z: 0}
+    texelSize: {x: 3.12500015e-05, y: 3.12500015e-05}
     positions:
-    - {x: -1.27999997, y: -1.27999997, z: 0}
-    - {x: 1.27999997, y: -1.27999997, z: 0}
-    - {x: -1.27999997, y: 1.27999997, z: 0}
-    - {x: 1.27999997, y: 1.27999997, z: 0}
+    - {x: -.00400000019, y: -.00400000019, z: 0}
+    - {x: .00400000019, y: -.00400000019, z: 0}
+    - {x: -.00400000019, y: .00400000019, z: 0}
+    - {x: .00400000019, y: .00400000019, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -78,6 +78,43 @@ MonoBehaviour:
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
+  - name: ColourCapsule
+    boundsData:
+    - {x: 0, y: -.00156249851, z: 0}
+    - {x: .512499988, y: .146875009, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00156249851, z: 0}
+    - {x: .512499988, y: .146875009, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.256249994, y: -.075000003, z: 0}
+    - {x: .256249994, y: -.075000003, z: 0}
+    - {x: -.256249994, y: .071875006, z: 0}
+    - {x: .256249994, y: .071875006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .511720717}
+    - {x: .00390820298, y: .832029283}
+    - {x: .0957011729, y: .511720717}
+    - {x: .0957011729, y: .832029283}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 02034d394d7e44891997e9d45823adf2, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8a1c380035cde4f2288cded346ed8b75
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -90,7 +127,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1275350543
+  buildKey: 221783740
   dataGuid: 63a2373a08b354161991bea32c8192ac
   managedSpriteCollection: 0
   hasPlatformData: 0
