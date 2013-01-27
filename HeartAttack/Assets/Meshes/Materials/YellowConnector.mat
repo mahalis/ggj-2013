@@ -6,12 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SilverConnector
-<<<<<<< HEAD
-  m_Shader: {fileID: 7, guid: 0000000000000000e000000000000000, type: 0}
-=======
+  m_Name: YellowConnector
   m_Shader: {fileID: 3, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> e47d2e3e93954cf456c2fec6029056b2c66fdd19
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -19,13 +15,7 @@ Material:
         first:
           name: _MainTex
         second:
-<<<<<<< HEAD
-          m_Texture: {fileID: 2800000, guid: 79ec477f7bd8e41e2b8b3949d38af56b, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats: {}
-=======
-          m_Texture: {fileID: 2800000, guid: 866aa4892b7cd4726a5174f0226eab72, type: 3}
+          m_Texture: {fileID: 2800000, guid: 659e537b99a8c4aee82a10bba66d7c63, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -33,16 +23,12 @@ Material:
         first:
           name: _Shininess
         second: .202149436
->>>>>>> e47d2e3e93954cf456c2fec6029056b2c66fdd19
     m_Colors:
       data:
         first:
           name: _Color
         second: {r: .588, g: .588, b: .588, a: 1}
-<<<<<<< HEAD
-=======
       data:
         first:
           name: _SpecColor
         second: {r: .5, g: .5, b: .5, a: 1}
->>>>>>> e47d2e3e93954cf456c2fec6029056b2c66fdd19
