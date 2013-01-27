@@ -11,6 +11,8 @@ public class ActionCard : MonoBehaviour {
 		Robot,
 		Count,
 		Hiss,
+		Girl,
+		Spring,
 	}
 	public StartingSoundEffect startingSoundEffect = StartingSoundEffect.None;
 
@@ -59,6 +61,12 @@ public class ActionCard : MonoBehaviour {
  			break;
  			case StartingSoundEffect.Count :
  				SoundManager.getInstance().playSoundEffect("count");
+ 			break;
+ 			case StartingSoundEffect.Girl :
+ 				SoundManager.getInstance().playSoundEffect("catCall");
+ 			break;
+ 			case StartingSoundEffect.Spring :
+ 				SoundManager.getInstance().playSoundEffect("boing");
  			break;
  		}
  	}
