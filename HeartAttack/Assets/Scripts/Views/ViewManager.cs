@@ -45,7 +45,7 @@ public class ViewManager : MonoBehaviour {
 
 	public void setBpm(float bpm) {
 		if (heartBPMGUI){
-			heartBPMGUI.text = ((int)bpm).ToString();
+			heartBPMGUI.text = ((int)bpm).ToString() + " BPM";
 		}
 	}
 	
