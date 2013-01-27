@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour {
 	
 	const float RANDOM_TIME_ADJUSTMENT = 0.5f;
 	const float BASE_HEART_RATE = 60;
-	const float HEART_RATE_GROWTH = 0.5f; // beats per minute per second
-	const float HEART_RATE_TIME_LOSS = 0.05f; // number of seconds per bpm
-	const float BASE_CARD_INTERVAL = 3.0f;
+	const float HEART_RATE_GROWTH = 0.2f; // beats per minute per second
+	const float HEART_RATE_TIME_LOSS = 0.03f; // number of seconds per bpm
+	const float BASE_CARD_INTERVAL = 6.0f;
 	
 	const float EASY_CHANCE = 0.2f; // remove 1 color from next card
 	const float SUPER_EASY_CHANCE = 0.05f; // remove 2 colors from next card
@@ -75,9 +75,11 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void nodeWasConnected () {
+		Debug.Log("---------------");
 		List<PortColor> connectedColors = new List<PortColor>();
 		foreach(NodeConnection nc in nodeConnections) {
 			if (nc.isConnected){
+				Debug.Log("adding : " + nc.portColor);
 				connectedColors.Add(nc.portColor);
 			}
 		}
