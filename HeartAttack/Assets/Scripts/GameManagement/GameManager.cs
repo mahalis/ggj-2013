@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 					nextCardTime = now + (BASE_CARD_INTERVAL - (currentHeartRate - BASE_HEART_RATE) * HEART_RATE_TIME_LOSS) + Random.Range(-RANDOM_TIME_ADJUSTMENT, RANDOM_TIME_ADJUSTMENT);
 				} else {
 					// Game Over
+					SoundManager.getInstance().playGameOver();
 					viewManager.setGameOverViewVisible(true);
 					viewManager.setScore((int)currentScore);
 					gameIsActive = false;
@@ -117,6 +118,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 	}
 
 	public void replayGame () {
+		SoundManager.getInstance().resumeTheme();
 		currentScore = 0;
 		ActionCardManager.getInstance().reset();
 		currentHeartRate = BASE_HEART_RATE;

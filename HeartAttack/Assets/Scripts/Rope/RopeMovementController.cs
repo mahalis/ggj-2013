@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class RopeMovementController : MonoBehaviour {
+public class RopeMovementController : MonoBehaviour,IEventListener {
 
 	bool isFollowingMouse = false;
 	public bool isConnected = false;
@@ -20,8 +20,9 @@ public class RopeMovementController : MonoBehaviour {
 		BoxCollider bc = this.gameObject.AddComponent<BoxCollider>();
 		bc.size = new Vector3(5,5,5);
 		bc.isTrigger = true;
-
 		this.gameObject.layer = TIP_LAYER;
+
+		EventManager.instance.AddListener(this as IEventListener, "DisconnectAllNodesEvent");	
 	}
 	
 	// Update is called once per frame
@@ -35,6 +36,24 @@ public class RopeMovementController : MonoBehaviour {
 		}
 	}
 
+	bool IEventListener.HandleEvent(IEvent evt) {
+	    switch (evt.GetName()) {
+	    	case "DisconnectAllNodesEvent" :
+	    		disconnect();
+	    		break;
+	    }
+	    return false;
+	}
+	void disconnect() {
+		 isConnected = false;
+		if (activeNodeConnection != null){
+        	activeNodeConnection.disconnectRope();
+        	this.transform.rotation = preConnectionRotation;
+        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
+        	SoundManager.getInstance().playSoundEffect("squish");
+        }
+        activeNodeConnection = null;
+	}
 
 	void checkForInteraction() {
 		if ( Input.GetMouseButtonDown(0) ){
@@ -45,16 +64,7 @@ public class RopeMovementController : MonoBehaviour {
 		        	grabPosition = Input.mousePosition;
 			        isFollowingMouse = true;
 			        rigidbody.isKinematic = true;
-			        isConnected = false;
-			        if (activeNodeConnection != null){
-			        	activeNodeConnection.disconnectRope();
-			        	this.transform.rotation = preConnectionRotation;
-			        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
-			        	//EventManager.instance.TriggerEvent(new NodeDisconnectedEvent());
-			        	SoundManager.getInstance().playSoundEffect("squish");
-
-			        }
-			        activeNodeConnection = null;
+			        disconnect();
 			    }
 		    }
 		} else if ( Input.GetMouseButtonUp(0) ) {
