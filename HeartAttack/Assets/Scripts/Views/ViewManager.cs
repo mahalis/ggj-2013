@@ -32,6 +32,9 @@ public class ViewManager : MonoBehaviour {
 	public void hideStartGameView() {
 		startGameView.SetActive(false);
 	}
+	public void showStartGameView() {
+		startGameView.SetActive(true);
+	}
 
 	public void setGameOverViewVisible(bool visible) {
 		gameOverView.SetActive(visible);

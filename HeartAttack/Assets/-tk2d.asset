@@ -543,21 +543,21 @@ MonoBehaviour:
     spriteNames:
     - white-pixel
     - Replay1
-    - Start-thing1
+    - 
     - bkg
     - tut
     spriteTextureGUIDs:
     - 8f4494a81dd3345f28c6202e75e05249
     - 34e17af1bae37437fb78f9d517f18e43
-    - dc6d8b05d7ddb4ab989a9a12b0a51750
+    - 
     - 2eb4f9190042f4442ac491b3e356552c
     - 75b73fabcdac2469b903df4bcf366ca7
     spriteTextureTimeStamps:
-    - 1359196453
-    - 1359227560
-    - 1359227560
-    - 1359289867
-    - 1359289191
+    - 1359156384
+    - 1359227242
+    - 0
+    - 1359293095
+    - 1359288511
     managedSpriteCollection: 0
     version: 3
   - name: Plant
@@ -759,5 +759,16 @@ MonoBehaviour:
     - 1359211776
     - 1359211776
     - 1359211776
+    managedSpriteCollection: 0
+    version: 3
+  - name: TitleScreen
+    spriteCollectionGUID: 6ac48fc3504794e38b92815ebeca32cf
+    spriteCollectionDataGUID: 4060e3c96b8a5448e86a3c70d1dbc36f
+    spriteNames:
+    - TitleScreen
+    spriteTextureGUIDs:
+    - c9bda3f7d76cd41d2a5240b6c865fcf8
+    spriteTextureTimeStamps:
+    - 1359293789
     managedSpriteCollection: 0
     version: 3

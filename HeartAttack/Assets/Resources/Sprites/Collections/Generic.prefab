@@ -51,15 +51,15 @@ MonoBehaviour:
   - name: 
     spriteCollection: {fileID: 0}
   managedSpriteCollection: 0
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   forceTextureSize: 0
   forcedTextureWidth: 1024
   forcedTextureHeight: 1024
   textureCompression: 0
-  atlasWidth: 1024
-  atlasHeight: 2048
+  atlasWidth: 2048
+  atlasHeight: 4096
   forceSquareAtlas: 0
-  atlasWastage: 27.3246288
+  atlasWastage: 56.548893
   allowMultipleAtlases: 0
   textureParams:
   - name: white-pixel
@@ -136,15 +136,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: Start-thing1
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: dc6d8b05d7ddb4ab989a9a12b0a51750, type: 3}
+    texture: {fileID: 0}
     materialId: 0
     anchor: 4
-    anchorX: 246
-    anchorY: 300
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -165,7 +165,7 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 1
+    colliderType: 0
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
@@ -180,8 +180,8 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: 2eb4f9190042f4442ac491b3e356552c, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 512
-    anchorY: 384
+    anchorX: 1024
+    anchorY: 768
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []

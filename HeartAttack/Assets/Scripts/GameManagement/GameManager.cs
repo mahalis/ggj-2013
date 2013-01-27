@@ -111,6 +111,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 		currentScore = 0;
 		gameIsActive = true;
 		viewManager.hideStartGameView();
+
 	}
 
 	public void replayGame () {
@@ -118,13 +119,10 @@ public class GameManager : MonoBehaviour,IEventListener {
 		currentScore = 0;
 		ActionCardManager.getInstance().reset();
 		currentHeartRate = BASE_HEART_RATE;
-		gameIsActive = true;
+		EventManager.instance.TriggerEvent(new DisconnectAllNodesEvent());
+
+		viewManager.showStartGameView();
 		viewManager.setGameOverViewVisible(false);
-		foreach(NodeConnection nc in nodeConnections) {
-			if (nc.isConnected) {
-				nc.disconnectRope();
-			}
-		}
 	}
 
 	public void completedActionCardWithNumberOfColors(int numColors) {
