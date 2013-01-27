@@ -118,6 +118,11 @@ public class GameManager : MonoBehaviour,IEventListener {
 		currentHeartRate = BASE_HEART_RATE;
 		gameIsActive = true;
 		viewManager.setGameOverViewVisible(false);
+		foreach(NodeConnection nc in nodeConnections) {
+			if (nc.isConnected) {
+				nc.disconnectRope();
+			}
+		}
 	}
 
 }
