@@ -2029,7 +2029,8 @@ MonoBehaviour:
   upperLeftAnchor: {fileID: 0}
   startGameView: {fileID: 123679320}
   gameOverView: {fileID: 2043628149}
-  scoreMesh: {fileID: 0}
+  scoreMesh: {fileID: 1044005479}
+  heartBPMGUI: {fileID: 1197242807}
 --- !u!1 &316579990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,9 +2528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7eeb7d27f0df004e90cb9fda2d821bd, type: 3}
   m_Name: 
   viewCamera: {fileID: 0}
-  buttonDownSprite: start-thing1
-  buttonUpSprite: start-thing1
-  buttonPressedSprite: start-thing1
+  buttonDownSprite: Start-thing1
+  buttonUpSprite: Start-thing1
+  buttonPressedSprite: Start-thing1
   buttonDownSound: {fileID: 0}
   buttonUpSound: {fileID: 0}
   buttonPressedSound: {fileID: 0}

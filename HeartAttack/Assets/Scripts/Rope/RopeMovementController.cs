@@ -81,6 +81,7 @@ public class RopeMovementController : MonoBehaviour {
 			foreach (NodeConnection nc in connections) {
 				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
 				if (dist < 1.5f && !nc.isConnected) {
+					SoundManager.getInstance().playSoundEffect("Blood");
 					preConnectionRotation = this.transform.rotation;
 					isConnected = true;
 					nc.connectWithRope(this);

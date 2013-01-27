@@ -10,6 +10,8 @@ public class ViewManager : MonoBehaviour {
 	public GameObject gameOverView;
 	public TextMesh scoreMesh;
 
+	public GUIText heartBPMGUI;
+
 	void Start() {
 		setGameOverViewVisible(false);
 		this.positionAnchors();
@@ -39,7 +41,12 @@ public class ViewManager : MonoBehaviour {
 		if (scoreMesh){
 			scoreMesh.text = score.ToString();
 		}
-		Debug.Log("YOUR SCORE : " + score);
+	}
+
+	public void setBpm(float bpm) {
+		if (heartBPMGUI){
+			heartBPMGUI.text = ((int)bpm).ToString();
+		}
 	}
 	
 }

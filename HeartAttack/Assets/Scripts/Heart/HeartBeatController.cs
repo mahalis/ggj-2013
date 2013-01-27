@@ -119,6 +119,7 @@ public class HeartBeatController : MonoBehaviour {
 		while(true) {
 			beatAccum = 0f;
 			heartState = HeartState.contractSamll;
+			SoundManager.getInstance().playHeartUpBeat();
 			yield return null;
 			beatAccum = 0f;
 			heartState = HeartState.pulseWait;
@@ -130,6 +131,7 @@ public class HeartBeatController : MonoBehaviour {
 			heartState = HeartState.pulseWait;
 			yield return null;
 			beatAccum = 0f;
+			SoundManager.getInstance().playHeartDownBeat();
 			heartState = HeartState.contractLarge;
 			yield return null;
 			beatAccum = 0f;
