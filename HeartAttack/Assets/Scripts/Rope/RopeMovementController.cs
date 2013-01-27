@@ -47,6 +47,8 @@ public class RopeMovementController : MonoBehaviour {
 			        if (activeNodeConnection != null){
 			        	activeNodeConnection.disconnectRope();
 			        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
+						Quaternion rot = Quaternion.AngleAxis(-90, new Vector3(1,0,0));
+						Instantiate(GameManager.getInstance().bloodSpurt,activeNodeConnection.transform.position, rot * activeNodeConnection.transform.rotation);
 			        }
 			        activeNodeConnection = null;
 			    }

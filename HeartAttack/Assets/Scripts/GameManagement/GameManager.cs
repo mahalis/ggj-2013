@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour,IEventListener {
 	public ViewManager viewManager;
 	public List<NodeConnection> nodeConnections;
+	public ParticleSystem bloodSpurt;
 
 	float currentHeartRate; // beats per minute
 	float nextCardTime;
