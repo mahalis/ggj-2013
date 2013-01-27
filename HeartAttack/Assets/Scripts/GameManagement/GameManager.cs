@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 	public ViewManager viewManager;
 	public List<NodeConnection> nodeConnections;
 	public ParticleSystem bloodSpurt;
+	public HeartBeatController heartBeatController;
 
 	float currentHeartRate; // beats per minute
 	float nextCardTime;
@@ -37,7 +38,8 @@ public class GameManager : MonoBehaviour,IEventListener {
 	// Use this for initialization
 	void Start () {
 		currentHeartRate = BASE_HEART_RATE;
-		//ActionCardManager.getInstance().generateNewAction(1);
+		viewManager.setBpm(currentHeartRate);
+		heartBeatController.setBPM(currentHeartRate);
 	}
 	
 	// Update is called once per frame
@@ -46,16 +48,19 @@ public class GameManager : MonoBehaviour,IEventListener {
 			float now = Time.time;
 			currentHeartRate += Time.deltaTime * HEART_RATE_GROWTH;
 			viewManager.setBpm(currentHeartRate);
+			heartBeatController.setBPM(currentHeartRate);
 			if(now > nextCardTime) {
 				if (ActionCardManager.getInstance().numberOfActiveCards() < MAX_ACTION_CARDS){
 					newCard ();
 					nextCardTime = now + (BASE_CARD_INTERVAL - (currentHeartRate - BASE_HEART_RATE) * HEART_RATE_TIME_LOSS) + Random.Range(-RANDOM_TIME_ADJUSTMENT, RANDOM_TIME_ADJUSTMENT);
 				} else {
 					// Game Over
+					/*
 					SoundManager.getInstance().playGameOver();
 					viewManager.setGameOverViewVisible(true);
 					viewManager.setScore((int)currentScore);
 					gameIsActive = false;
+					*/
 				}				
 			}
 		}
@@ -64,10 +69,10 @@ public class GameManager : MonoBehaviour,IEventListener {
 	void newCard() {
 		int numColors = 1 + Mathf.RoundToInt(4 * Mathf.Pow(Mathf.Min(currentHeartRate - BASE_HEART_RATE, 60) / 60.0f, 0.3f));
 		if (Random.Range(0.0f, 1.0f) < EASY_CHANCE) {
-			Debug.Log ("Easy, subtracting 1");
+			//Debug.Log ("Easy, subtracting 1");
 			numColors -= 1;
 		} else if (Random.Range(0.0f, 1.0f) < SUPER_EASY_CHANCE) {
-			Debug.Log("Super easy, subtracting 2");
+			//Debug.Log("Super easy, subtracting 2");
 			numColors -= 2;
 		}
 		if (numColors < 1) numColors = 1;
