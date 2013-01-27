@@ -30,6 +30,9 @@ MonoBehaviour:
   - assetGUID: e5d3e006b00b74c139d742b31f38f1d7
     dataGUID: 
     managed: 0
+  - assetGUID: c4e0ac291135b408697fdf2bb36c3c80
+    dataGUID: 
+    managed: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -543,5 +546,76 @@ MonoBehaviour:
     - 1359246068
     - 1359246068
     - 1359246068
+    managedSpriteCollection: 0
+    version: 3
+  - name: Plant
+    spriteCollectionGUID: 7e0c9ec7f83e94b0aafdba51cf4f7802
+    spriteCollectionDataGUID: 8835e3f6e1e5a497280a96d432f4f22d
+    spriteNames:
+    - Plant0001
+    - Plant0002
+    - Plant0003
+    - Plant0004
+    - Plant0005
+    - Plant0006
+    - Plant0007
+    - Plant0008
+    - Plant0009
+    - Plant0010
+    - Plant0011
+    - Plant0012
+    - Plant0013
+    - Plant0014
+    - Plant0015
+    - Plant0016
+    - Plant0017
+    - Plant0018
+    - Plant0019
+    - Plant0020
+    - Plant0021
+    spriteTextureGUIDs:
+    - f3f8940ce998448d8bb66c02e4f2f776
+    - dd10c3eef66dc4dd3999d15ad966ac95
+    - cebe0cda8768f413191179b32ab33946
+    - 03abeaecae7fc4c0cb2116d20be2e911
+    - 732cfb2c2a54342e4b01fcf3d5cd3cfc
+    - d87def8ab7d1a4b6680d4c9b33fc2b96
+    - d37596d655a20479a9e80174d3cfe75d
+    - cb716c46060ae4c93a81d5f7be54d954
+    - a1ac9c9c20ec84d05bdd674521c06ddd
+    - 23aa7b41acdc34ef8b4931b01293f853
+    - ac5ece14270b44e09a987a5fb491e8c5
+    - 28019aba22c3f495ea27efcb9b341d72
+    - 6406df8811206486184b71599bcc67f9
+    - d6e172b06d8fc42c1a5d625857193197
+    - 983e8867ff8f64c3f8fbcf08bc60b594
+    - beba6b0819ed745fd8fba827e242d745
+    - ad9f5a7d428cf40b6b427e6fb7e83c1d
+    - 5203f9802a6c7409e9febd4f0374f8de
+    - 2596c4625446346509ea7eb28300df46
+    - 05591535184eb4824ab81e70799a8b38
+    - b3eaf1964774a48aab51390c93089697
+    spriteTextureTimeStamps:
+    - 1359252172
+    - 1359252174
+    - 1359252174
+    - 1359252174
+    - 1359252174
+    - 1359252174
+    - 1359252174
+    - 1359252174
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252176
+    - 1359252178
     managedSpriteCollection: 0
     version: 3
