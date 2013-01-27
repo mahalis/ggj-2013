@@ -8,6 +8,8 @@ public class RopeMovementController : MonoBehaviour {
 	public bool isConnected = false;
 	NodeConnection activeNodeConnection;
 
+	Quaternion preConnectionRotation;
+
 	Vector2 grabPosition;
 
 	int TIP_LAYER = 8;
@@ -46,6 +48,7 @@ public class RopeMovementController : MonoBehaviour {
 			        isConnected = false;
 			        if (activeNodeConnection != null){
 			        	activeNodeConnection.disconnectRope();
+			        	this.transform.rotation = preConnectionRotation;
 			        	EventManager.instance.TriggerEvent(new NodeConnectionsChangedEvent());
 						Instantiate(GameManager.getInstance().bloodSpurt,activeNodeConnection.transform.position, activeNodeConnection.transform.rotation);
 			        }
@@ -76,6 +79,7 @@ public class RopeMovementController : MonoBehaviour {
 			foreach (NodeConnection nc in connections) {
 				float dist = Vector2.Distance(this.transform.position, nc.transform.position);
 				if (dist < 1f && !nc.isConnected) {
+					preConnectionRotation = this.transform.rotation;
 					isConnected = true;
 					nc.connectWithRope(this);
 					activeNodeConnection = nc;

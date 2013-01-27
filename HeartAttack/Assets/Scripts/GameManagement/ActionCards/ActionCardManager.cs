@@ -148,6 +148,10 @@ public class ActionCardManager : MonoBehaviour {
 		}		
 	}
 
+	public int  numberOfActiveCards () {
+		return activeActionCards.Count;
+	}
+
 	void activeActionCardHasBeenCompleted() {
 		ActionCard completedCard = activeActionCards[0];
 		startTransitionX = completedCard.transform.localPosition.x;
@@ -192,6 +196,15 @@ public class ActionCardManager : MonoBehaviour {
 		for (int i = 0; i < activeActionCards.Count; i ++){
 			activeActionCards[i].transform.localPosition = new Vector3(0,ACTION_CARD_SIZE * i,0);
 		}
+	}
+
+	public void reset() {
+		this.gameObject.transform.localPosition = new Vector3(-ACTION_CARD_SIZE/2f -0.5f,ACTION_CARD_SIZE/2f,0);
+
+		foreach(ActionCard ac in activeActionCards){
+			Destroy(ac.gameObject);
+		}
+		activeActionCards = new List<ActionCard>();
 	}
 
 }
