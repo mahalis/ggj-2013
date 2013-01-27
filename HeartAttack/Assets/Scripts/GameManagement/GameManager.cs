@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour,IEventListener {
 	
 	const float RANDOM_TIME_ADJUSTMENT = 0.5f;
 	const float BASE_HEART_RATE = 60;
-	const float HEART_RATE_GROWTH = 0.25f; // beats per minute per second
+	const float HEART_RATE_GROWTH = 0.4f; // beats per minute per second
 	const float HEART_RATE_TIME_LOSS = 0.03f; // number of seconds per bpm
 	const float BASE_CARD_INTERVAL = 6.0f;
 	
