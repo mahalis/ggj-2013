@@ -38,7 +38,7 @@ public class SoundManager : MonoBehaviour,IEventListener {
 
 
 	public void playSoundEffect (string effectName) {
-		Debug.Log("playSoundEffect "+ effectName);
+		//Debug.Log("playSoundEffect "+ effectName);
 		AudioSource source;
 		AudioClip clip;
 
